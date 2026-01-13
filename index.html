@@ -22,6 +22,8 @@
     <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
         <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-lg font-bold tracking-tight text-slate-900">HYEHYUN MA</a>
+            
+            <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-8 text-sm font-medium">
                 <a href="#about" class="text-slate-500 hover:text-blue-600 transition">About</a>
                 <a href="#education" class="text-slate-500 hover:text-blue-600 transition">Education</a>
@@ -29,8 +31,20 @@
                 <a href="#publications" class="text-slate-500 hover:text-blue-600 transition">Publications</a>
                 <a href="#cv" class="text-slate-500 hover:text-blue-600 transition">CV</a>
             </div>
-            <!-- Mobile Menu Icon (Visual Only) -->
-            <div class="md:hidden text-slate-500"><i class="fa-solid fa-bars"></i></div>
+
+            <!-- Mobile Menu Icon -->
+            <button id="menu-btn" class="md:hidden text-slate-500 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu List -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-6 py-4 space-y-4 shadow-lg">
+            <a href="#about" class="block text-sm font-medium text-slate-600 hover:text-blue-600">About</a>
+            <a href="#education" class="block text-sm font-medium text-slate-600 hover:text-blue-600">Education</a>
+            <a href="#research" class="block text-sm font-medium text-slate-600 hover:text-blue-600">Research</a>
+            <a href="#publications" class="block text-sm font-medium text-slate-600 hover:text-blue-600">Publications</a>
+            <a href="#cv" class="block text-sm font-medium text-slate-600 hover:text-blue-600">CV</a>
         </div>
     </nav>
 
@@ -49,23 +63,17 @@
                 </p>
 
                 <div class="flex flex-wrap justify-center md:justify-start gap-3">
-                    <!-- 1. Email -->
                     <a href="mailto:gogus8281@hanyang.ac.kr" class="bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition flex items-center gap-2 shadow-sm">
                         <i class="fa-regular fa-envelope"></i> Email
                     </a>
-
-                    <!-- 2. LinkedIn -->
                     <a href="https://www.linkedin.com/in/hyehyunma" target="_blank" class="bg-white border border-slate-200 text-slate-700 px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-50 transition flex items-center gap-2 shadow-sm">
                         <i class="fa-brands fa-linkedin"></i> LinkedIn
                     </a>
-
-                    <!-- 3. ResearchGate -->
                     <a href="https://www.researchgate.net/profile/Hyehyun-Ma" target="_blank" class="bg-white border border-slate-200 text-slate-700 px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-50 transition flex items-center gap-2 shadow-sm">
                         <i class="fa-brands fa-researchgate"></i> ResearchGate
                     </a>
-
-                    <!-- 4. Google Scholar (추가됨) -->
-                    <a href="https://scholar.google.com/citations?user=GOOGLE_SCHOLAR_ID_HERE" target="_blank" class="bg-white border border-slate-200 text-slate-700 px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-50 transition flex items-center gap-2 shadow-sm">
+                    <!-- Google Scholar -->
+                    <a href="https://scholar.google.com/citations?user=4ROFv34AAAAJ" target="_blank" class="bg-white border border-slate-200 text-slate-700 px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-50 transition flex items-center gap-2 shadow-sm">
                         <i class="fa-solid fa-graduation-cap"></i> Google Scholar
                     </a>
                 </div>
@@ -120,8 +128,6 @@
         <section id="research" class="scroll-mt-24">
             <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-blue-600 mb-8">Research Interests</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
-                <!-- Card 1: Domain & Theory -->
                 <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-200 transition-colors group">
                     <div class="text-blue-600 text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">
                         <i class="fa-solid fa-vr-cardboard"></i>
@@ -131,8 +137,6 @@
                         Investigating the socio-psychological effects of communication within evolving media landscapes—including <strong>eXtended Reality (XR)</strong>, <strong>artificial intelligence (AI) agents</strong>, and <strong>social robots</strong>—through the lens of human–technology interaction.
                     </p>
                 </div>
-
-                <!-- Card 2: Methodologies -->
                 <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-200 transition-colors group">
                     <div class="text-indigo-600 text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">
                         <i class="fa-solid fa-arrow-up-right-dots"></i>
@@ -142,79 +146,31 @@
                         Advancing rigorous communication research by applying and developing <strong>Bayesian methods</strong>, <strong>computational social science</strong>, and <strong>simulation-based inference</strong> to model complex social phenomena.
                     </p>
                 </div>
-
             </div>
         </section>
 
-        <!-- Publications / Academic Work -->
+        <!-- Publications -->
         <section id="publications" class="scroll-mt-24">
             <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-blue-600 mb-8">Selected Publications</h2>
             <div class="space-y-6">
-        
-        <!-- Publication Item 1 -->
-        <div class="group p-6 hover:bg-slate-50 rounded-2xl transition border border-transparent hover:border-slate-100">
-            <div class="flex justify-between items-start mb-2">
-                <span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded tracking-widest uppercase">Journal Article</span>
-                <span class="text-xs font-medium text-slate-400">2025</span>
-            </div>
-            <a href="https://doi.org/10.1080/10447318.2025.2526590" target="_blank" class="inline-block">
-                <h3 class="font-bold text-lg text-slate-900 group-hover:text-blue-600 transition decoration-blue-600/30 hover:underline underline-offset-4">
-                    The Effects of Virtual Social Touch on Interpersonal Communication Outcomes in Virtual Environments: A Meta-Analysis
-                </h3>
-            </a>
-            <p class="text-slate-500 text-sm mt-2 leading-relaxed italic">Ma, H. H., Lee, M., Kim, E., & Pang, S. (2025). International Journal of Human–Computer Interaction, 1–17.</p>
-        </div>
-
-        <!-- Publication Item 2 -->
-        <div class="group p-6 hover:bg-slate-50 rounded-2xl transition border border-transparent hover:border-slate-100">
-            <div class="flex justify-between items-start mb-2">
-                <span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded tracking-widest uppercase">Journal Article</span>
-                <span class="text-xs font-medium text-slate-400">2025</span>
-            </div>
-            <a href="https://doi.org/10.20879/kjjcs.2025.69.4.002" target="_blank" class="inline-block">
-                <h3 class="font-bold text-lg text-slate-900 group-hover:text-blue-600 transition decoration-blue-600/30 hover:underline underline-offset-4">
-                    Replicability of Communication Research in Korea: Evidence of Publication Bias and p-Hacking
-                </h3>
-            </a>
-            <p class="text-slate-500 text-sm mt-2 leading-relaxed italic">Byoungkwan Lee, Hye Hyun Ma✉, Elena Kim, Shuyu Pang, & Taesu Kim. (2025). Korean Journal of Journalism & Communication Studies, 69(4), 36-71.</p>
-            <p class="text-slate-900 text-xs mt-1 font-semibold">🏆 Best Article Award of the Year, Korean Society For Journalism And Communication Studies</p>
-        </div>
-
-        <!-- Publication Item 3 -->
-        <div class="group p-6 hover:bg-slate-50 rounded-2xl transition border border-transparent hover:border-slate-100">
-            <div class="flex justify-between items-start mb-2">
-                <span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded tracking-widest uppercase">Journal Article</span>
-                <span class="text-xs font-medium text-slate-400">2023</span>
-            </div>
-            <a href="https://doi.org/10.20879/kjjcs.2023.67.4.002" target="_blank" class="inline-block">
-                <h3 class="font-bold text-lg text-slate-900 group-hover:text-blue-600 transition decoration-blue-600/30 hover:underline underline-offset-4">
-                    The Influences of Nonverbal Communication Cues of Avatars on Self-Disclosure in Immersive Social VR: Focusing on Inter-Avatar Distance and Physical Attractiveness of the Interlocutor’s Avatar.
-                </h3>
-            </a>
-            <p class="text-slate-500 text-sm mt-2 leading-relaxed italic">Hye Hyun Ma, Seo Yeon Keum, Shuyu Pang, JunHyeok Oh, Jin Lee & Byoungkwan Lee. (2023). Korean Journal of Journalism & Communication Studies, 67(4), 47-88.</p>
-        </div>
-
-        <!-- Publication Item 4 -->
-        <div class="group p-6 hover:bg-slate-50 rounded-2xl transition border border-transparent hover:border-slate-100">
-            <div class="flex justify-between items-start mb-2">
-                <span class="text-[10px] font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded tracking-widest uppercase">Conference Paper</span>
-                <span class="text-xs font-medium text-slate-400">2025</span>
-            </div>
-                <h3 class="font-bold text-lg text-slate-900 group-hover:text-indigo-600 transition decoration-indigo-600/30 hover:underline underline-offset-4">
-                    Exploring the Probabilistic Causal Structure of Media Trust: A Bayesian Network Analysis
-                </h3>
-            <p class="text-slate-500 text-sm mt-2 leading-relaxed italic">Presented at the Korean Association for Communication and Information Studies (KACIS), Busan, Korea.</p>
-            <p class="text-slate-900 text-xs mt-1 font-semibold">🏆 Outstanding Graduate Student Paper Award, KACIS, Graduate Student Division</p>
-        </div>
-
+                <div class="group p-6 hover:bg-slate-50 rounded-2xl transition border border-transparent hover:border-slate-100">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded tracking-widest uppercase">Journal Article</span>
+                        <span class="text-xs font-medium text-slate-400">2025</span>
+                    </div>
+                    <a href="https://doi.org/10.1080/10447318.2025.2526590" target="_blank" class="inline-block">
+                        <h3 class="font-bold text-lg text-slate-900 group-hover:text-blue-600 transition decoration-blue-600/30 hover:underline underline-offset-4">
+                            The Effects of Virtual Social Touch on Interpersonal Communication Outcomes in Virtual Environments: A Meta-Analysis
+                        </h3>
+                    </a>
+                    <p class="text-slate-500 text-sm mt-2 leading-relaxed italic">Ma, H. H., Lee, M., Kim, E., & Pang, S. (2025). International Journal of Human–Computer Interaction, 1–17.</p>
+                </div>
             </div>
         </section>
 
-        <!-- CV CTA Section -->
+        <!-- CV Section -->
         <section id="cv" class="scroll-mt-24 bg-slate-900 rounded-[2rem] py-16 px-8 text-center text-white overflow-hidden relative">
-            <!-- Decorative circle -->
             <div class="absolute -top-24 -right-24 w-64 h-64 bg-blue-600 rounded-full blur-3xl opacity-20"></div>
-            
             <h2 class="text-3xl font-extrabold mb-4 relative z-10">Curriculum Vitae</h2>
             <p class="text-slate-400 mb-10 max-w-lg mx-auto relative z-10 leading-relaxed text-sm">
                 For a detailed overview of my academic background, professional experience, and full list of publications, please download my CV below.
@@ -228,26 +184,31 @@
 
     <footer class="max-w-4xl mx-auto px-6 py-16 border-t border-slate-100 text-center">
         <div class="flex justify-center space-x-8 mb-6 text-slate-400">
-            <a href="mailto:gogus8281@hanyang.ac.kr" class="hover:text-slate-900 transition text-xl">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-            
-            <a href="https://www.linkedin.com/in/hyehyunma" target="_blank" class="hover:text-slate-900 transition text-xl">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            
-            <a href="https://www.researchgate.net/profile/Hyehyun-Ma" target="_blank" class="hover:text-slate-900 transition text-xl">
-                <i class="fa-brands fa-researchgate"></i>
-            </a>
-
-            <!-- 구글 스칼라 아이콘 (추가됨) -->
-            <a href="https://scholar.google.com/citations?user=GOOGLE_SCHOLAR_ID_HERE" target="_blank" class="hover:text-slate-900 transition text-xl">
-                <i class="fa-solid fa-graduation-cap"></i>
-            </a>
+            <a href="mailto:gogus8281@hanyang.ac.kr" class="hover:text-slate-900 transition text-xl"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/hyehyunma" target="_blank" class="hover:text-slate-900 transition text-xl"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.researchgate.net/profile/Hyehyun-Ma" target="_blank" class="hover:text-slate-900 transition text-xl"><i class="fa-brands fa-researchgate"></i></a>
+            <a href="https://scholar.google.com/citations?user=4ROFv34AAAAJ" target="_blank" class="hover:text-slate-900 transition text-xl"><i class="fa-solid fa-graduation-cap"></i></a>
+            <a href="#" target="_blank" class="hover:text-slate-900 transition text-xl"><i class="fa-solid fa-graduation-cap"></i></a>
         </div>
         <p class="text-xs font-medium text-slate-400 tracking-wider">&copy; 2026 HYEHYUN MA. ALL RIGHTS RESERVED.</p>
-        <p class="mt-2 text-[10px] text-slate-300 uppercase tracking-widest">Last updated: Jan 2026</p>
     </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        const menuLinks = menu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
 
 </body>
 </html>
