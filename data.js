@@ -10,7 +10,7 @@ const presentationData = [
         image: "assets/presentations/images/015-image.png",
         pptLink: "assets/presentations/slides/015-slides.pdf",
         sessionPdf: "assets/presentations/sessions/015-session.pdf",
-        tags: ["Meta science", "Meta analysis", "Reliability generalization", "Health communication"]
+        tags: ["Meta science", "Reliability generalization", "Health communication"]
     },
     {
         id: "014",
@@ -50,7 +50,7 @@ const presentationData = [
         image: "assets/presentations/images/012-image.jpeg",
         pptLink: "assets/presentations/slides/012-slides.pdf",
         sessionPdf: "assets/presentations/sessions/012-session.pdf",
-        tags: ["Meta science", "Meta analysis", "Virtual reality", "Social interaction", "Bayesian statistics"]
+        tags: ["Meta science", "Virtual reality", "Social interaction", "Bayesian statistics"]
     },
     {
         id: "011",
@@ -63,7 +63,7 @@ const presentationData = [
         image: "assets/presentations/images/011-image.jpeg",
         pptLink: "assets/presentations/slides/011-slides.pdf",
         sessionPdf: "assets/presentations/sessions/011-session.pdf",
-        tags: ["Responsible gampling", "Public communication", "Health communication", "Audience segmentation", "Clustering"]
+        tags: ["Public communication", "Health communication", "Audience segmentation", "Clustering"]
     },
     {
         id: "010",
@@ -195,6 +195,6 @@ const presentationData = [
         image: "assets/presentations/images/001-image.png",
         pptLink: "assets/presentations/slides/001-slides.pdf",
         sessionPdf: "assets/presentations/sessions/001-session.pdf",
-        tags: ["Journalism", "Content analysis", "Media coverage"]
+        tags: ["Journalism", "Content analysis"]
     }
 ];
