@@ -14,15 +14,15 @@ const presentationData = [
     },
     {
         id: "001",
-        emoji: "📺",
-        title: "Exploring the Probabilistic Causal Structure of Media Trust: A Bayesian Network Analysis",
-        authors: "Ma, H. H.",
-        yearMonth: "2025, May",
-        conference: "Korean Association for Communication and Information Studies (KACIS)",
-        location: "Busan, Korea",
+        emoji: "📰",
+        title: "데이트 폭력 언론보도의 프레이밍 특성에 대한 연구",
+        authors: "Ma, H. H., Shin, J. W., Joo, D. H., Mang, S. W., & Lee, B.",
+        yearMonth: "2018, December",
+        conference: "Korea Health Communication Association (KHCA)",
+        location: "Seoul, Korea",
         image: "assets/presentations/images/001-image.png",
         pptLink: "assets/presentations/slides/001-slides.pdf",
         sessionPdf: "assets/presentations/sessions/001-session.pdf",
-        tags: ["Bayesian", "Causal Inference", "Media Trust"]
+        tags: ["Journalism", "Content analysis", "Media coverage"]
     }
 ];
