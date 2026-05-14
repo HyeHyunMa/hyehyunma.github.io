@@ -53,39 +53,54 @@
     </main>
 
     <!-- Academic Modal -->
-    <div id="modal" class="hidden fixed inset-0 z-[60] flex items-center justify-center p-4">
-        <div class="absolute inset-0 modal-backdrop" onclick="closeModal()"></div>
-        <div class="relative bg-white w-full max-w-2xl overflow-y-auto rounded-3xl shadow-2xl p-10">
-            <!-- Modal Close -->
-            <button onclick="closeModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-900 transition">
-                <i class="fa-solid fa-xmark text-2xl"></i>
-            </button>
+<div id="modal" class="hidden fixed inset-0 z-[60] flex items-center justify-center p-4">
+    <div class="absolute inset-0 modal-backdrop" onclick="closeModal()"></div>
+    <div class="relative bg-white w-full max-w-xl overflow-y-auto rounded-3xl shadow-2xl p-10">
+        <!-- Close Button -->
+        <button onclick="closeModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-900 transition">
+            <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
 
-            <div class="flex flex-col">
-                <div id="modal-emoji" class="text-5xl mb-6"></div>
-                <h2 id="modal-title" class="text-2xl font-bold text-slate-900 mb-8 leading-tight"></h2>
-                
-                <!-- Citation Style Info -->
-                <div class="citation-box p-6 rounded-xl mb-8">
-                    <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest block mb-3">Academic Citation</span>
-                    <p id="modal-citation" class="text-slate-700 leading-relaxed italic text-sm md:text-base"></p>
+        <div class="flex flex-col">
+            <!-- Emoji & Title -->
+            <div id="modal-emoji" class="text-5xl mb-4"></div>
+            <h2 id="modal-title" class="text-2xl font-bold text-slate-900 mb-8 leading-tight"></h2>
+            
+            <!-- Properties List (노션 스타일) -->
+            <div class="space-y-4 mb-10 border-t border-slate-100 pt-8">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+                    <span class="w-32 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">Authors</span>
+                    <p id="modal-authors" class="text-sm text-slate-700 font-semibold"></p>
                 </div>
+                <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+                    <span class="w-32 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">Presentation Date</span>
+                    <p id="modal-date" class="text-sm text-slate-700"></p>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+                    <span class="w-32 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">Conference</span>
+                    <p id="modal-conference" class="text-sm text-slate-700"></p>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">
+                    <span class="w-32 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">Location</span>
+                    <p id="modal-location" class="text-sm text-slate-700"></p>
+                </div>
+            </div>
 
-                <div class="flex flex-wrap gap-2 mb-10" id="modal-tags">
-                    <!-- 태그들 -->
-                </div>
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2 mb-10" id="modal-tags"></div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <a id="modal-ppt" href="#" target="_blank" class="flex items-center justify-center gap-3 bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-slate-800 transition shadow-lg text-sm">
-                        <i class="fa-regular fa-file-lines"></i> View Presentation (Slides)
-                    </a>
-                    <a id="modal-session" href="#" target="_blank" class="flex items-center justify-center gap-3 bg-white border border-slate-200 text-slate-700 py-4 rounded-xl font-bold hover:bg-slate-50 transition shadow-sm text-sm">
-                        <i class="fa-regular fa-file-lines"></i> View Session Schedule
-                    </a>
-                </div>
+            <!-- Action Buttons -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a id="modal-ppt" href="#" target="_blank" class="flex items-center justify-center gap-3 bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-slate-800 transition shadow-lg text-sm">
+                    <i class="fa-regular fa-file-lines"></i> View Presentation (Slides)
+                </a>
+                <a id="modal-session" href="#" target="_blank" class="flex items-center justify-center gap-3 bg-white border border-slate-200 text-slate-700 py-4 rounded-xl font-bold hover:bg-slate-50 transition shadow-sm text-sm">
+                    <i class="fa-regular fa-file-lines"></i> View Session Schedule
+                </a>
             </div>
         </div>
     </div>
+</div>
 
     <script src="data.js"></script>
     <script>
@@ -131,21 +146,21 @@
         function openModal(id) {
             const item = presentationData.find(p => p.id === id);
             if (!item) return;
-
+        
             document.getElementById('modal-emoji').innerText = item.emoji;
             document.getElementById('modal-title').innerText = item.title;
+            document.getElementById('modal-authors').innerText = item.authors || "Not specified";
+            document.getElementById('modal-date').innerText = item.date || "Not specified";
+            document.getElementById('modal-conference').innerText = item.conference || "Not specified";
+            document.getElementById('modal-location').innerText = item.location || "Not specified";
+        
+            document.getElementById('modal-ppt').href = item.pptLink || "#";
+            document.getElementById('modal-session').href = item.sessionPdf || "#";
             
-            // APA Citation format: Authors (Year, Month). Title. Paper presented at Conference. Location.
-            const citationText = `${item.authors} (${item.yearMonth}). ${item.title}. Paper presented at ${item.conference}. ${item.location}.`;
-            document.getElementById('modal-citation').innerText = citationText;
-
-            document.getElementById('modal-ppt').href = item.pptLink;
-            document.getElementById('modal-session').href = item.sessionPdf;
-            
-            document.getElementById('modal-tags').innerHTML = item.tags.map(tag => 
+            document.getElementById('modal-tags').innerHTML = (item.tags || []).map(tag => 
                 `<span class="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-[10px] font-bold uppercase tracking-wider border border-blue-100">${tag}</span>`
             ).join('');
-
+        
             document.getElementById('modal').classList.remove('hidden');
             document.body.style.overflow = 'hidden';
         }
