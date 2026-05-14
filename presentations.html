@@ -115,7 +115,6 @@
                     <div class="p-6">
                         <div class="flex items-center gap-2 mb-3">
                             <span class="text-xl">${item.emoji}</span>
-                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">${item.conference}</span>
                         </div>
                         <h3 class="font-bold text-slate-900 leading-snug group-hover:text-blue-600 transition mb-4 line-clamp-2">${item.title}</h3>
                         <div class="flex flex-wrap gap-1.5">
@@ -151,8 +150,8 @@
             document.getElementById('modal-image').src = item.image;
             document.getElementById('modal-emoji').innerText = item.emoji;
             document.getElementById('modal-title').innerText = item.title;
-            document.getElementById('modal-conference').innerText = item.conference;
-            document.getElementById('modal-authors').innerText = item.authors;
+         // document.getElementById('modal-conference').innerText = item.conference;
+         // document.getElementById('modal-authors').innerText = item.authors;
             document.getElementById('modal-date').innerText = item.date;
             document.getElementById('modal-ppt').href = item.pptLink;
             document.getElementById('modal-session').href = item.sessionPdf;
