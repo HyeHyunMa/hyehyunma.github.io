@@ -10,7 +10,7 @@ const presentationData = [
         image: "assets/presentations/images/015-image.png",
         pptLink: "assets/presentations/slides/015-slides.pdf",
         sessionPdf: "assets/presentations/sessions/015-session.pdf",
-        tags: ["Bayesian network", "Bayesian statistics", "Journalism"]
+        tags: ["Meta science", "Meta analysis", "Reliability generalization", "Health communicaton"]
     },
     {
         id: "014",
