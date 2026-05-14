@@ -166,8 +166,20 @@
         }
 
         function closeModal() {
-            document.getElementById('modal').classList.add('hidden');
-            document.body.style.overflow = 'auto';
+            // 1. 현재 주소창에 'id' 파라미터가 있는지 확인합니다.
+            const urlParams = new URLSearchParams(window.location.search);
+            const hasIdParam = urlParams.has('id');
+        
+            if (hasIdParam) {
+                // 2. 만약 메인 페이지에서 특정 카드를 클릭해서 넘어온 상태라면,
+                // 모달을 닫을 때 다시 메인 페이지의 'Presentations' 섹션으로 보냅니다.
+                window.location.href = 'index.html#presentations-preview';
+            } else {
+                // 3. 만약 처음부터 'Presentations' 전체 목록 페이지에서 보고 있었다면,
+                // 그냥 모달만 닫아서 목록을 계속 볼 수 있게 합니다.
+                document.getElementById('modal').classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
         }
 
         window.onload = () => {
