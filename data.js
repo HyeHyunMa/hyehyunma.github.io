@@ -17,7 +17,7 @@ const presentationData = [
         emoji: "📰",
         title: "데이트 폭력 언론보도의 프레이밍 특성에 대한 연구",
         authors: "Ma, H. H., Shin, J. W., Joo, D. H., Mang, S. W., & Lee, B.",
-        date: "2025, December 18",
+        date: "2025. 12. 18.",
         conference: "Korea Health Communication Association (KHCA)",
         location: "Seoul, Korea",
         image: "assets/presentations/images/001-image.png",
