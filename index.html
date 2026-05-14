@@ -244,8 +244,10 @@
                     <div class="flex items-center gap-2 mb-2">
                         <span class="text-xl">${item.emoji}</span>
                     </div>
-                    <h3 class="font-bold text-slate-900 leading-snug group-hover:text-blue-600 transition line-clamp-2">${item.title} ${item.award ? '<span class="text-sm ml-1">🏆</span>' : ''}</h3>
-                </div>
+                    <h3 class="font-bold text-slate-900 leading-snug group-hover:text-blue-600 transition line-clamp-2">
+                        ${item.award ? '<span class="text-sm mr-1">🏆</span>' : ''}${item.title}
+                    </h3>                
+                    </div>
             </a>
         `).join('');
     }
