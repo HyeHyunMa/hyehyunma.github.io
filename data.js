@@ -1,5 +1,45 @@
 const presentationData = [
     {
+        id: "008",
+        emoji: "🪴",
+        title: "A Preliminary Study for Developing Perceived ESG Scale to Measure Public Perception Toward Organizations’ ESG Performance",
+        authors: "Oh, H. J., Park, S. J., Ma, H. H., Lee, B., & Jang, D. Y.",
+        date: "2023. 5. 25.",
+        conference: "ICA-KACA research session",
+        location: "Toronto, Canada",
+        image: "assets/presentations/images/008-image.png",
+        pptLink: "assets/presentations/slides/008-slides.pdf",
+        sessionPdf: "assets/presentations/sessions/008-session.pdf",
+        tags: ["Scale development", "Sustainability"],
+        award: "Top Paper Award, International Communication Association (ICA), Korean American Communication Association (KACA) Research Session"
+    },
+    {
+        id: "007",
+        emoji: "🗣️",
+        title: "The Impact of Nonverbal Communication Cues of Avatars on Self-Disclosurein an Immersive Social VR: Focusing on Inter-Avatar Distance and Physical Attractiveness of the Interlocutor’s Avatar",
+        authors: "Ma, H. H., Keum, S. Y., Pang, S., Oh, J. H., Lee, J., & Lee, B.",
+        date: "2023. 5. 19.",
+        conference: "Korean Society For Journalism And Communication Studies (KSJCS)",
+        location: "Jeju, Korea",
+        image: "assets/presentations/images/007-image.png",
+        pptLink: "assets/presentations/slides/007-slides.pdf",
+        sessionPdf: "assets/presentations/sessions/007-session.pdf",
+        tags: ["Virtual reality", "Social interaction", "Experiment"]
+    },
+    {
+        id: "006",
+        emoji: "🗣️",
+        title: "Inter-Avatar Distance and Conversation Satisfaction in Immersive VR: Exploring the Moderating Effects of the Sense of Embodiment",
+        authors: "Pang, S., Ma, H. H., & Lee, B.",
+        date: "2023. 5. 12.",
+        conference: "Journal of Cybercommunication Academic Society (JCAS)",
+        location: "Seoul, Korea",
+        image: "assets/presentations/images/006-image.png",
+        pptLink: "assets/presentations/slides/006-slides.pdf",
+        sessionPdf: "assets/presentations/sessions/006-session.jpg",
+        tags: ["Virtual reality", "Social interaction", "Experiment"]
+    },
+    {
         id: "005",
         emoji: "🪴",
         title: "조직의 ESG 활동에 대한 공중 인식 평가를 위한 소셜데이터 기반 Perceived ESG Index 개발",
