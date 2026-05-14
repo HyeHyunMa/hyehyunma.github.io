@@ -14,7 +14,8 @@ const presentationData = [
     },
     {
         id: "001",
-        emoji: "📺",        title: "Exploring the Probabilistic Causal Structure of Media Trust: A Bayesian Network Analysis",
+        emoji: "📰",
+        title: "데이트 폭력 언론보도의 프레이밍 특성에 대한 연구",
         conference: "2025 한국언론정보학회",
         date: "2025. 05. 31",
         authors: "Hye Hyun Ma",
