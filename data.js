@@ -1,5 +1,58 @@
 const presentationData = [
     {
+        id: "015",
+        emoji: "📐",
+        title: "Reliability Generalization Meta-Analysis of Health Belief Model Scales: Measurement Quality, Moderators, and Implications for Statistical Power",
+        authors: "Ma, H. H., Lee, B., Paek, H.-J., Kim, T., & Hong, S. W.",
+        date: "2026. 5. 8.",
+        conference: "Korean Society For Journalism And Communication Studies (KSJCS)",
+        location: "Yeosu, Korea",
+        image: "assets/presentations/images/015-image.png",
+        pptLink: "assets/presentations/slides/015-slides.pdf",
+        sessionPdf: "assets/presentations/sessions/015-session.pdf",
+        tags: ["Bayesian network", "Bayesian statistics", "Journalism"]
+    },
+    {
+        id: "014",
+        emoji: "🌐",
+        title: "Exploring the Probabilistic Causal Structure of Media Trust: A Bayesian Network Analysis",
+        authors: "Ma, H. H.",
+        date: "2025. 5. 31.",
+        conference: "Korean Association For Communication And Information Studies (KACIS)",
+        location: "Busan, Korea",
+        image: "assets/presentations/images/014-image.png",
+        pptLink: "assets/presentations/slides/014-slides.pdf",
+        sessionPdf: "assets/presentations/sessions/014-session.pdf",
+        tags: ["Bayesian network", "Bayesian statistics", "Journalism"],
+        award: "Outstanding Graduate Student Paper Award, Korean Association For Communication And Information Studies (KACIS), Graduate Student Division"
+    },
+    {
+        id: "013",
+        emoji: "🎰",
+        title: "Designing Public Messages to Prevent Lottery Addiction: An Experiment Study to Correct Cognitive Errors",
+        authors: "Ma, H. H. & Paek, H.-J.",
+        date: "2024. 6. 15.",
+        conference: "Korea Health Communication Association (KHCA)",
+        location: "Seoul, Korea",
+        image: "assets/presentations/images/013-image.png",
+        pptLink: "assets/presentations/slides/013-slides.pdf",
+        sessionPdf: "assets/presentations/sessions/013-session.pdf",
+        tags: ["Public communication", "Health communication", "Experiment"]
+    },
+    {
+        id: "012",
+        emoji: "🤝",
+        title: "Simulated touch: A Meta-Analysis of the Effects of Virtual Social Touch on Interpersonal Communication Outcomes",
+        authors: "Ma, H. H., Kim, E., Pang, S. & Lee, B.",
+        date: "2024. 5. 10.",
+        conference: "Korean Society For Journalism And Communication Studies (KSJCS)",
+        location: "Gyeongju, Korea",
+        image: "assets/presentations/images/012-image.jpeg",
+        pptLink: "assets/presentations/slides/012-slides.pdf",
+        sessionPdf: "assets/presentations/sessions/012-session.pdf",
+        tags: ["Meta science", "Meta analysis", "Virtual reality", "Social interaction", "Bayesian statistics"]
+    },
+    {
         id: "011",
         emoji: "🎰",
         title: "효과적인 복권 커뮤니케이션 전략: 수용자 세분화 분석을 중심으로",
@@ -10,7 +63,7 @@ const presentationData = [
         image: "assets/presentations/images/011-image.jpeg",
         pptLink: "assets/presentations/slides/011-slides.pdf",
         sessionPdf: "assets/presentations/sessions/011-session.pdf",
-        tags: ["Responsible gampling", "Public communication", "Audience segmentation", "Clustering"],
+        tags: ["Responsible gampling", "Public communication", "Health communication", "Audience segmentation", "Clustering"]
     },
     {
         id: "010",
@@ -23,7 +76,7 @@ const presentationData = [
         image: "assets/presentations/images/010-image.jpeg",
         pptLink: "assets/presentations/slides/010-slides.pdf",
         sessionPdf: "assets/presentations/sessions/010-session.pdf",
-        tags: ["Sustainability", "Public communication"],
+        tags: ["Sustainability", "Public communication"]
     },
     {
         id: "009",
@@ -37,6 +90,7 @@ const presentationData = [
         pptLink: "assets/presentations/slides/009-slides.pdf",
         sessionPdf: "assets/presentations/sessions/009-session.pdf",
         tags: ["Virtual reality", "Campaign evaluation", "Health communication"],
+        award: "Best Paper Award, Enzaim / Korea Health Communication Association"
     },
     {
         id: "008",
@@ -102,7 +156,7 @@ const presentationData = [
         image: "assets/presentations/images/004-image.png",
         pptLink: "assets/presentations/slides/004-slides.pdf",
         sessionPdf: "assets/presentations/sessions/004-session.jpg",
-        tags: ["Causal inference", "Bayesian", "Campaign evaluation", "Health communication"]
+        tags: ["Causal inference", "Bayesian statistics", "Campaign evaluation", "Health communication"]
     },
     {
         id: "003",
