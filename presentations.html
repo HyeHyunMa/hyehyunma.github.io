@@ -51,42 +51,52 @@
     </main>
 
     <!-- Academic Modal -->
-<div id="modal" class="hidden fixed inset-0 z-[60] flex items-center justify-center p-4">
-    <div class="absolute inset-0 modal-backdrop" onclick="closeModal()"></div>
-    <div class="relative bg-white w-full max-w-3xl overflow-y-auto rounded-3xl shadow-2xl p-10 md:p-12">
-        <!-- Close Button -->
-        <button onclick="closeModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-900 transition">
-            <i class="fa-solid fa-xmark text-2xl"></i>
-        </button>
-
-        <div class="flex flex-col">
-            <!-- Emoji & Title -->
-            <div id="modal-emoji" class="text-5xl mb-4"></div>
-            <h2 id="modal-title" class="text-2xl font-bold text-slate-900 mb-8 leading-tight"></h2>
+    <div id="modal" class="hidden fixed inset-0 z-[60] flex items-center justify-center p-4">
+        <div class="absolute inset-0 modal-backdrop" onclick="closeModal()"></div>
+        <div class="relative bg-white w-full max-w-3xl overflow-y-auto rounded-3xl shadow-2xl p-10 md:p-12">
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-900 transition">
+                <i class="fa-solid fa-xmark text-2xl"></i>
+            </button>
+    
+            <div class="flex flex-col">
+                <!-- Emoji & Title -->
+                <div id="modal-emoji" class="text-5xl mb-4"></div>
+                <h2 id="modal-title" class="text-2xl font-bold text-slate-900 mb-8 leading-tight"></h2>
             
-            <!-- Properties List (노션 스타일) -->
-            <div class="space-y-4 mb-10 border-t border-slate-100 pt-8">
-                <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-6">
-                    <span class="w-40 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">Authors</span>
-                    <p id="modal-authors" class="text-sm text-slate-700 font-semibold"></p>
-                </div>
-                <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-6">
-                    <span class="w-40 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">Date</span>
-                    <p id="modal-date" class="text-sm text-slate-700"></p>
-                </div>
-                <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-6">
-                    <span class="w-40 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">Conference</span>
-                    <p id="modal-conference" class="text-sm text-slate-700"></p>
-                </div>
-                <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-6">
-                    <span class="w-40 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em]">Location</span>
-                    <p id="modal-location" class="text-sm text-slate-700"></p>
-                </div>
-                <div id="modal-award-container" class="hidden flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
-                <span class="w-32 text-[10px] font-bold text-amber-500 uppercase tracking-[0.2em] shrink-0 pt-1">Honors</span>
-                <p id="modal-award" class="flex-1 text-sm text-amber-700 font-bold leading-relaxed"></p>
-                </div>
-            </div>
+    <!-- Properties List -->
+    <div class="space-y-4 mb-10 border-t border-slate-100 pt-8">
+        <!-- Authors -->
+        <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-8">
+            <span class="w-40 shrink-0 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] pt-1.5">Authors</span>
+            <p id="modal-authors" class="flex-1 text-sm text-slate-700 font-semibold leading-relaxed"></p>
+        </div>
+    
+        <!-- Date -->
+        <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-8">
+            <span class="w-40 shrink-0 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] pt-1.5">Date</span>
+            <p id="modal-date" class="flex-1 text-sm text-slate-700 font-semibold leading-relaxed"></p>
+        </div>
+    
+        <!-- Conference -->
+        <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-8">
+            <span class="w-40 shrink-0 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] pt-1.5">Conference</span>
+            <p id="modal-conference" class="flex-1 text-sm text-slate-700 font-semibold leading-relaxed"></p>
+        </div>
+    
+        <!-- Location -->
+        <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-8">
+            <span class="w-40 shrink-0 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] pt-1.5">Location</span>
+            <p id="modal-location" class="flex-1 text-sm text-slate-700 font-semibold leading-relaxed"></p>
+        </div>
+    
+        <!-- Honors (Award) -->
+        <div id="modal-award-container" class="hidden flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-8">
+            <!-- w-40과 shrink-0을 다른 항목과 똑같이 맞췄습니다 -->
+            <span class="w-40 shrink-0 text-[10px] font-bold text-amber-500 uppercase tracking-[0.2em] pt-1.5">Honors</span>
+            <p id="modal-award" class="flex-1 text-sm text-amber-700 font-bold leading-relaxed"></p>
+        </div>
+    </div>
 
             <!-- Tags -->
             <div class="flex flex-wrap gap-2 mb-10" id="modal-tags"></div>
@@ -185,12 +195,8 @@
             const hasIdParam = urlParams.has('id');
         
             if (hasIdParam) {
-                // 2. 만약 메인 페이지에서 특정 카드를 클릭해서 넘어온 상태라면,
-                // 모달을 닫을 때 다시 메인 페이지의 'Presentations' 섹션으로 보냅니다.
                 window.location.href = 'index.html#presentations-preview';
             } else {
-                // 3. 만약 처음부터 'Presentations' 전체 목록 페이지에서 보고 있었다면,
-                // 그냥 모달만 닫아서 목록을 계속 볼 수 있게 합니다.
                 document.getElementById('modal').classList.add('hidden');
                 document.body.style.overflow = 'auto';
             }
