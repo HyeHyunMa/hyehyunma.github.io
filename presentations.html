@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentations | Hyehyun Ma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .notion-card:hover { transform: translateY(-4px); transition: all 0.2s ease; }
+        .modal-backdrop { background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(4px); }
+    </style>
+</head>
+<body class="bg-white text-slate-800">
+
+    <!-- Navigation (기존 index.html과 동일) -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-lg font-bold tracking-tight text-slate-900">HYEHYUN MA</a>
+            <div class="flex space-x-8 text-sm font-medium">
+                <a href="index.html#about" class="text-slate-500 hover:text-blue-600">About</a>
+                <a href="index.html#publications" class="text-slate-500 hover:text-blue-600">Publications</a>
+                <a href="#" class="text-blue-600">Presentations</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <!-- Header -->
+        <header class="mb-12">
+            <div class="flex items-center gap-4 mb-4">
+                <span class="text-5xl">📢</span>
+                <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight">Conference Presentations</h1>
+            </div>
+            <p class="text-slate-500 max-w-2xl">Click into each project to learn more about its creation, goal and current version.</p>
+        </header>
+
+        <!-- Tag Filter -->
+        <div id="tag-container" class="flex flex-wrap gap-2 mb-10">
+            <button onclick="filterByTag('All')" class="tag-btn px-4 py-1.5 rounded-full text-xs font-bold bg-slate-900 text-white border border-slate-900 transition">All</button>
+            <!-- Tags will be injected here -->
+        </div>
+
+        <!-- Gallery Grid -->
+        <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Cards will be injected here -->
+        </div>
+    </main>
+
+    <!-- Modal Detail View -->
+    <div id="modal" class="hidden fixed inset-0 z-[60] flex items-center justify-center p-4">
+        <div class="absolute inset-0 modal-backdrop" onclick="closeModal()"></div>
+        <div class="relative bg-white w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-3xl shadow-2xl flex flex-col md:flex-row">
+            <!-- Modal Close -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 z-10 w-10 h-10 bg-white/80 rounded-full flex items-center justify-center shadow-md hover:bg-white transition">
+                <i class="fa-solid fa-xmark text-slate-900"></i>
+            </button>
+
+            <!-- Image Side -->
+            <div class="w-full md:w-1/2 bg-slate-100">
+                <img id="modal-image" src="" alt="" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Content Side -->
+            <div class="w-full md:w-1/2 p-10 flex flex-col">
+                <div id="modal-emoji" class="text-4xl mb-4"></div>
+                <h2 id="modal-title" class="text-2xl font-bold text-slate-900 mb-2 leading-tight"></h2>
+                <div id="modal-conference" class="text-blue-600 font-bold text-sm mb-4 uppercase tracking-wider"></div>
+                
+                <div class="space-y-4 mb-8">
+                    <div>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">Authors</span>
+                        <p id="modal-authors" class="text-sm text-slate-600 font-medium"></p>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">Date</span>
+                        <p id="modal-date" class="text-sm text-slate-600"></p>
+                    </div>
+                    <div id="modal-tags" class="flex flex-wrap gap-2 pt-2"></div>
+                </div>
+
+                <div class="mt-auto space-y-3">
+                    <a id="modal-ppt" href="#" target="_blank" class="flex items-center justify-center gap-3 bg-slate-900 text-white w-full py-3.5 rounded-xl font-bold hover:bg-slate-800 transition shadow-lg">
+                        <i class="fa-solid fa-file-powerpoint"></i> View Presentation (Slides)
+                    </a>
+                    <a id="modal-session" href="#" target="_blank" class="flex items-center justify-center gap-3 bg-white border border-slate-200 text-slate-700 w-full py-3.5 rounded-xl font-bold hover:bg-slate-50 transition shadow-sm">
+                        <i class="fa-solid fa-file-pdf"></i> View Session Schedule
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script>
+        let currentTag = 'All';
+
+        function renderGallery() {
+            const grid = document.getElementById('gallery-grid');
+            const filteredData = currentTag === 'All' 
+                ? presentationData 
+                : presentationData.filter(item => item.tags.includes(currentTag));
+
+            grid.innerHTML = filteredData.map(item => `
+                <div onclick="openModal('${item.id}')" class="notion-card group bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition cursor-pointer">
+                    <div class="aspect-[16/10] overflow-hidden border-b border-slate-50 bg-slate-50">
+                        <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://via.placeholder.com/400x250?text=Presentation'">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-xl">${item.emoji}</span>
+                            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">${item.conference}</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 leading-snug group-hover:text-blue-600 transition mb-4 line-clamp-2">${item.title}</h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            ${item.tags.slice(0, 3).map(tag => `<span class="px-2 py-0.5 bg-slate-50 border border-slate-100 rounded text-[10px] font-semibold text-slate-500">${tag}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderTags() {
+            const tagContainer = document.getElementById('tag-container');
+            const allTags = ['All', ...new Set(presentationData.flatMap(item => item.tags))];
+            
+            tagContainer.innerHTML = allTags.map(tag => `
+                <button onclick="filterByTag('${tag}')" 
+                        class="tag-btn px-4 py-1.5 rounded-full text-xs font-bold transition border ${tag === currentTag ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-500 border-slate-200 hover:border-slate-400'}">
+                    ${tag}
+                </button>
+            `).join('');
+        }
+
+        function filterByTag(tag) {
+            currentTag = tag;
+            renderTags();
+            renderGallery();
+        }
+
+        function openModal(id) {
+            const item = presentationData.find(p => p.id === id);
+            if (!item) return;
+
+            document.getElementById('modal-image').src = item.image;
+            document.getElementById('modal-emoji').innerText = item.emoji;
+            document.getElementById('modal-title').innerText = item.title;
+            document.getElementById('modal-conference').innerText = item.conference;
+            document.getElementById('modal-authors').innerText = item.authors;
+            document.getElementById('modal-date').innerText = item.date;
+            document.getElementById('modal-ppt').href = item.pptLink;
+            document.getElementById('modal-session').href = item.sessionPdf;
+            
+            document.getElementById('modal-tags').innerHTML = item.tags.map(tag => 
+                `<span class="px-2 py-1 bg-blue-50 text-blue-600 rounded text-[10px] font-bold uppercase tracking-wider border border-blue-100">${tag}</span>`
+            ).join('');
+
+            document.getElementById('modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // 스크롤 방지
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // 초기 실행
+        window.onload = () => {
+            renderTags();
+            renderGallery();
+        };
+    </script>
+</body>
+</html>
