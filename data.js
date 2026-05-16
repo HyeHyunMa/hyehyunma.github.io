@@ -10,7 +10,7 @@ const presentationData = [
         image: "assets/presentations/images/015-image.png",
         pptLink: "assets/presentations/slides/015-slides.pdf",
         sessionPdf: "assets/presentations/sessions/015-session.pdf",
-        tags: ["Meta science", "Health communication"]
+        tags: ["Meta science", "Measurement", "Health communication"]
     },
     {
         id: "014",
@@ -37,7 +37,7 @@ const presentationData = [
         image: "assets/presentations/images/013-image.png",
         pptLink: "assets/presentations/slides/013-slides.pdf",
         sessionPdf: "assets/presentations/sessions/013-session.pdf",
-        tags: ["Public communication", "Health communication", "Experiment"]
+        tags: ["Public communication", "Health communication", "Experiment", "Strategic Communication"]
     },
     {
         id: "012",
@@ -63,7 +63,7 @@ const presentationData = [
         image: "assets/presentations/images/011-image.jpeg",
         pptLink: "assets/presentations/slides/011-slides.pdf",
         sessionPdf: "assets/presentations/sessions/011-session.pdf",
-        tags: ["Public communication", "Health communication", "Clustering"]
+        tags: ["Public communication", "Health communication", "Clustering", "Strategic Communication"]
     },
     {
         id: "010",
@@ -76,7 +76,7 @@ const presentationData = [
         image: "assets/presentations/images/010-image.jpeg",
         pptLink: "assets/presentations/slides/010-slides.pdf",
         sessionPdf: "assets/presentations/sessions/010-session.pdf",
-        tags: ["Sustainability", "Public communication"]
+        tags: ["Sustainability", "Public communication", "Strategic Communication"]
     },
     {
         id: "009",
@@ -156,7 +156,7 @@ const presentationData = [
         image: "assets/presentations/images/004-image.png",
         pptLink: "assets/presentations/slides/004-slides.pdf",
         sessionPdf: "assets/presentations/sessions/004-session.jpg",
-        tags: ["Causal inference", "Bayesian inference", "Campaign evaluation", "Health communication"]
+        tags: ["Causal inference", "Bayesian inference", "Campaign evaluation", "Health communication", "Strategic Communication"]
     },
     {
         id: "003",
