@@ -14,6 +14,8 @@
         body { font-family: 'Inter', sans-serif; }
         .bg-gradient-header { background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%); }
         html { scroll-behavior: smooth; }
+        .modal-backdrop { background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(4px); }
+        .citation-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; }
     </style>
 </head>
 <body class="bg-white text-slate-800 leading-relaxed">
@@ -254,26 +256,63 @@
 <!-- index.html 하단 스크립트 영역 -->
 <script src="data.js"></script>
 <script>
-    function renderPreview() {
-        const previewGrid = document.getElementById('preview-grid');
-        const latestFour = presentationData.slice(0, 4);
-        previewGrid.innerHTML = latestFour.map(item => `
-            <a href="presentations.html?id=${item.id}" class="group bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
-                <div class="aspect-[16/10] overflow-hidden border-b border-slate-50">
-                    <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://via.placeholder.com/400x250?text=Presentation'">
+// index.html의 스크립트 부분 수정
+function renderPreview() {
+    const previewGrid = document.getElementById('preview-grid');
+    const latestFour = presentationData.slice(0, 4);
+    previewGrid.innerHTML = latestFour.map(item => `
+        <div onclick="openModal('${item.id}')" class="group bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer">
+            <div class="aspect-[16/10] overflow-hidden border-b border-slate-50">
+                <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://via.placeholder.com/400x250?text=Presentation'">
+            </div>
+            <div class="p-5">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="text-xl">${item.emoji}</span>
                 </div>
-                <div class="p-5">
-                    <div class="flex items-center gap-2 mb-2">
-                        <span class="text-xl">${item.emoji}</span>
-                    </div>
-                    <h3 class="font-bold text-slate-900 leading-snug group-hover:text-blue-600 transition line-clamp-2">
-                        ${item.award ? '<span class="text-sm mr-1">🏆</span>' : ''}${item.title}
-                    </h3>                
-                    </div>
-            </a>
-        `).join('');
+                <h3 class="font-bold text-slate-900 leading-snug group-hover:text-blue-600 transition line-clamp-2">
+                    ${item.award ? '<span class="text-sm mr-1">🏆</span>' : ''}${item.title}
+                </h3>                
+            </div>
+        </div>
+    `).join('');
+}
+
+// 모달 열기 함수 (presentations.html에서 복사해옴)
+function openModal(id) {
+    const item = presentationData.find(p => p.id === id);
+    if (!item) return;
+
+    document.getElementById('modal-emoji').innerText = item.emoji;
+    document.getElementById('modal-title').innerText = item.title;
+    document.getElementById('modal-authors').innerText = item.authors || "Not specified";
+    document.getElementById('modal-date').innerText = item.date || "Not specified";
+    document.getElementById('modal-conference').innerText = item.conference || "Not specified";
+    document.getElementById('modal-ppt').href = item.pptLink || "#";
+    document.getElementById('modal-session').href = item.sessionPdf || "#";
+    
+    document.getElementById('modal-tags').innerHTML = (item.tags || []).map(tag => 
+        `<span class="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-[10px] font-bold uppercase tracking-wider border border-blue-100">${tag}</span>`
+    ).join('');
+
+    const awardContainer = document.getElementById('modal-award-container');
+    if (item.award) {
+        awardContainer.classList.remove('hidden');
+        document.getElementById('modal-award').innerText = item.award;
+    } else {
+        awardContainer.classList.add('hidden');
     }
-    renderPreview();
+
+    document.getElementById('modal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+// 모달 닫기 함수 (단순히 닫기만 하도록 수정)
+function closeModal() {
+    document.getElementById('modal').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
+
+renderPreview();
 </script>
         
         <!-- CV Section -->
@@ -317,5 +356,45 @@
         });
     </script>
 
+    <!-- Academic Modal (index.html에 추가) -->
+<div id="modal" class="hidden fixed inset-0 z-[60] flex items-center justify-center p-4">
+    <div class="absolute inset-0 modal-backdrop" onclick="closeModal()"></div>
+    <div class="relative bg-white w-full max-w-3xl overflow-y-auto rounded-3xl shadow-2xl p-10 md:p-12 max-h-[90vh]">
+        <button onclick="closeModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-900 transition">
+            <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
+        <div class="flex flex-col">
+            <div id="modal-emoji" class="text-5xl mb-4"></div>
+            <h2 id="modal-title" class="text-2xl font-bold text-slate-900 mb-8 leading-tight"></h2>
+            <div class="space-y-4 mb-10 border-t border-slate-100 pt-8">
+                <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-8">
+                    <span class="w-40 shrink-0 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] pt-1.5">Authors</span>
+                    <p id="modal-authors" class="flex-1 text-sm text-slate-700 font-semibold leading-relaxed"></p>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-8">
+                    <span class="w-40 shrink-0 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] pt-1.5">Date</span>
+                    <p id="modal-date" class="flex-1 text-sm text-slate-700 font-semibold leading-relaxed"></p>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-8">
+                    <span class="w-40 shrink-0 text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] pt-1.5">Conference</span>
+                    <p id="modal-conference" class="flex-1 text-sm text-slate-700 font-semibold leading-relaxed"></p>
+                </div>
+                <div id="modal-award-container" class="hidden flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-8">
+                    <span class="w-40 shrink-0 text-[10px] font-bold text-amber-500 uppercase tracking-[0.2em] pt-1.5">Honors</span>
+                    <p id="modal-award" class="flex-1 text-sm text-amber-700 font-bold leading-relaxed"></p>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-10" id="modal-tags"></div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a id="modal-ppt" href="#" target="_blank" class="flex items-center justify-center gap-3 bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-slate-800 transition shadow-lg text-sm">
+                    <i class="fa-regular fa-file-lines"></i> View Presentation (Slides)
+                </a>
+                <a id="modal-session" href="#" target="_blank" class="flex items-center justify-center gap-3 bg-white border border-slate-200 text-slate-700 py-4 rounded-xl font-bold hover:bg-slate-50 transition shadow-sm text-sm">
+                    <i class="fa-regular fa-file-lines"></i> View Session Schedule
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
