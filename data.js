@@ -103,7 +103,7 @@ const presentationData = [
         image: "assets/presentations/images/008-image.png",
         pptLink: "assets/presentations/slides/008-slides.pdf",
         sessionPdf: "assets/presentations/sessions/008-session.pdf",
-        tags: ["Scale development", "Strategic Communication", "Sustainability"],
+        tags: ["Scale development", "Measurement", "Strategic Communication", "Sustainability"],
         award: "Top Paper Award, International Communication Association (ICA), Korean American Communication Association (KACA) Research Session"
     },
     {
@@ -143,7 +143,7 @@ const presentationData = [
         image: "assets/presentations/images/005-image.png",
         pptLink: "assets/presentations/slides/005-slides.pdf",
         sessionPdf: "assets/presentations/sessions/005-session.pdf",
-        tags: ["Scale development", "Strategic Communication", "Sustainability"]
+        tags: ["Scale development", "Measurement", "Strategic Communication", "Sustainability"]
     },
     {
         id: "004",
