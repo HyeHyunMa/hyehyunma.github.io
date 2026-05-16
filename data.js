@@ -10,7 +10,7 @@ const presentationData = [
         image: "assets/presentations/images/015-image.png",
         pptLink: "assets/presentations/slides/015-slides.pdf",
         sessionPdf: "assets/presentations/sessions/015-session.pdf",
-        tags: ["Meta science", "Reliability generalization", "Health communication"]
+        tags: ["Meta science", "Health communication"]
     },
     {
         id: "014",
@@ -23,7 +23,7 @@ const presentationData = [
         image: "assets/presentations/images/014-image.png",
         pptLink: "assets/presentations/slides/014-slides.pdf",
         sessionPdf: "assets/presentations/sessions/014-session.pdf",
-        tags: ["Bayesian network", "Bayesian statistics", "Journalism"],
+        tags: ["Bayesian inference", "Journalism"],
         award: "Outstanding Graduate Student Paper Award, Korean Association For Communication And Information Studies (KACIS), Graduate Student Division"
     },
     {
@@ -50,7 +50,7 @@ const presentationData = [
         image: "assets/presentations/images/012-image.jpeg",
         pptLink: "assets/presentations/slides/012-slides.pdf",
         sessionPdf: "assets/presentations/sessions/012-session.pdf",
-        tags: ["Meta science", "Virtual reality", "Social interaction", "Bayesian statistics"]
+        tags: ["Meta science", "Virtual reality", "Social interaction", "Bayesian inference"]
     },
     {
         id: "011",
@@ -63,7 +63,7 @@ const presentationData = [
         image: "assets/presentations/images/011-image.jpeg",
         pptLink: "assets/presentations/slides/011-slides.pdf",
         sessionPdf: "assets/presentations/sessions/011-session.pdf",
-        tags: ["Public communication", "Health communication", "Audience segmentation", "Clustering"]
+        tags: ["Public communication", "Health communication", "Clustering"]
     },
     {
         id: "010",
@@ -103,7 +103,7 @@ const presentationData = [
         image: "assets/presentations/images/008-image.png",
         pptLink: "assets/presentations/slides/008-slides.pdf",
         sessionPdf: "assets/presentations/sessions/008-session.pdf",
-        tags: ["Scale development", "Sustainability"],
+        tags: ["Scale development", "Strategic Communication", "Sustainability"],
         award: "Top Paper Award, International Communication Association (ICA), Korean American Communication Association (KACA) Research Session"
     },
     {
@@ -117,7 +117,7 @@ const presentationData = [
         image: "assets/presentations/images/007-image.png",
         pptLink: "assets/presentations/slides/007-slides.pdf",
         sessionPdf: "assets/presentations/sessions/007-session.pdf",
-        tags: ["Virtual reality", "Social interaction", "Experiment"]
+        tags: ["Virtual reality", "Social interaction", "Experiment", "Bayesian inference"]
     },
     {
         id: "006",
@@ -143,7 +143,7 @@ const presentationData = [
         image: "assets/presentations/images/005-image.png",
         pptLink: "assets/presentations/slides/005-slides.pdf",
         sessionPdf: "assets/presentations/sessions/005-session.pdf",
-        tags: ["Scale development", "Sustainability"]
+        tags: ["Scale development", "Strategic Communication", "Sustainability"]
     },
     {
         id: "004",
@@ -156,7 +156,7 @@ const presentationData = [
         image: "assets/presentations/images/004-image.png",
         pptLink: "assets/presentations/slides/004-slides.pdf",
         sessionPdf: "assets/presentations/sessions/004-session.jpg",
-        tags: ["Causal inference", "Bayesian statistics", "Campaign evaluation", "Health communication"]
+        tags: ["Causal inference", "Bayesian inference", "Campaign evaluation", "Health communication"]
     },
     {
         id: "003",
