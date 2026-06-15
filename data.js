@@ -7,7 +7,7 @@ const presentationData = [
         date: "2026. 6. 12.",
         conference: "Korea Health Communication Association (KHCA)",
         location: "Chuncheon, Korea",
-        image: "assets/presentations/images/016-image.jpeg",
+        image: "assets/presentations/images/016-image.png",
         pptLink: "assets/presentations/slides/016-slides.pdf",
         sessionPdf: "assets/presentations/sessions/016-session.jpg",
         tags: ["Causal inference", "Campaign evaluation", "Health communication", "Machine learning"]
