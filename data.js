@@ -1,5 +1,18 @@
 const presentationData = [
     {
+        id: "016",
+        emoji: "🌴",
+        title: "Causal Inference of Public Communication Campaign Effects Using Machine Learning: Applying Causal Forests to Estimate Heterogeneous Treatment Effects",
+        authors: "Lee, B., Kim, E., Ma, H. H., & Keum, S. Y.",
+        date: "2026. 6. 12.",
+        conference: "Korea Health Communication Association (KHCA)",
+        location: "Chuncheon, Korea",
+        image: "assets/presentations/images/016-image.jpeg",
+        pptLink: "assets/presentations/slides/016-slides.pdf",
+        sessionPdf: "assets/presentations/sessions/016-session.jpg",
+        tags: ["Causal inference", "Campaign evaluation", "Health communication", "Machine learning"]
+    },
+    {
         id: "015",
         emoji: "📐",
         title: "Reliability Generalization Meta-Analysis of Health Belief Model Scales: Measurement Quality, Moderators, and Implications for Statistical Power",
@@ -23,7 +36,7 @@ const presentationData = [
         image: "assets/presentations/images/014-image.png",
         pptLink: "assets/presentations/slides/014-slides.pdf",
         sessionPdf: "assets/presentations/sessions/014-session.pdf",
-        tags: ["Bayesian inference", "Journalism"],
+        tags: ["Bayesian inference", "Machine learning", "Journalism"],
         award: "Outstanding Graduate Student Paper Award, Korean Association For Communication And Information Studies (KACIS), Graduate Student Division"
     },
     {
@@ -37,7 +50,7 @@ const presentationData = [
         image: "assets/presentations/images/013-image.png",
         pptLink: "assets/presentations/slides/013-slides.pdf",
         sessionPdf: "assets/presentations/sessions/013-session.pdf",
-        tags: ["Public communication", "Health communication", "Experiment", "Strategic Communication"]
+        tags: ["Public communication", "Health communication", "Experiment", "Strategic communication"]
     },
     {
         id: "012",
@@ -63,7 +76,7 @@ const presentationData = [
         image: "assets/presentations/images/011-image.jpeg",
         pptLink: "assets/presentations/slides/011-slides.pdf",
         sessionPdf: "assets/presentations/sessions/011-session.pdf",
-        tags: ["Public communication", "Health communication", "Clustering", "Strategic Communication"]
+        tags: ["Public communication", "Health communication", "Clustering", "Machine learning", "Strategic communication"]
     },
     {
         id: "010",
@@ -76,7 +89,7 @@ const presentationData = [
         image: "assets/presentations/images/010-image.jpeg",
         pptLink: "assets/presentations/slides/010-slides.pdf",
         sessionPdf: "assets/presentations/sessions/010-session.pdf",
-        tags: ["Sustainability", "Public communication", "Strategic Communication"]
+        tags: ["Sustainability", "Public communication", "Strategic communication"]
     },
     {
         id: "009",
@@ -103,7 +116,7 @@ const presentationData = [
         image: "assets/presentations/images/008-image.png",
         pptLink: "assets/presentations/slides/008-slides.pdf",
         sessionPdf: "assets/presentations/sessions/008-session.pdf",
-        tags: ["Scale development", "Measurement", "Strategic Communication", "Sustainability"],
+        tags: ["Scale development", "Measurement", "Strategic communication", "Sustainability"],
         award: "Top Paper Award, International Communication Association (ICA), Korean American Communication Association (KACA) Research Session"
     },
     {
@@ -143,7 +156,7 @@ const presentationData = [
         image: "assets/presentations/images/005-image.png",
         pptLink: "assets/presentations/slides/005-slides.pdf",
         sessionPdf: "assets/presentations/sessions/005-session.pdf",
-        tags: ["Scale development", "Measurement", "Strategic Communication", "Sustainability"]
+        tags: ["Scale development", "Measurement", "Strategic communication", "Sustainability"]
     },
     {
         id: "004",
@@ -156,7 +169,7 @@ const presentationData = [
         image: "assets/presentations/images/004-image.png",
         pptLink: "assets/presentations/slides/004-slides.pdf",
         sessionPdf: "assets/presentations/sessions/004-session.jpg",
-        tags: ["Causal inference", "Bayesian inference", "Campaign evaluation", "Health communication", "Strategic Communication"]
+        tags: ["Causal inference", "Bayesian inference", "Campaign evaluation", "Health communication", "Strategic communication"]
     },
     {
         id: "003",
