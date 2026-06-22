@@ -128,7 +128,6 @@
             <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-blue-600 mb-8">Research Interests</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
-                <!-- 1. Meta-Science -->
                 <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-200 transition-colors group">
                     <div class="text-emerald-600 text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">
                         <i class="fa-solid fa-flask-vial"></i>
@@ -137,34 +136,36 @@
                     <ul class="text-slate-500 text-sm space-y-3">
                         <li class="flex items-start">
                             <span class="mr-2 text-emerald-500">•</span>
-                            <span>Enhancing research transparency, replicability, and evidence quality</span>
+                            <span>Cumulative knowledge-building, replicability, and self-correction</span>
                         </li>
                         <li class="flex items-start">
                             <span class="mr-2 text-emerald-500">•</span>
-                            <span>Investigating stability and statistical conclusion validity in research findings</span>
+                            <span>Evaluation of statistical practices, evidene quality, and methodological decision-making</span>
                         </li>
                     </ul>
                 </div>
         
-                <!-- 2. Advanced Quantitative Methods -->
                 <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-200 transition-colors group">
                     <div class="text-indigo-600 text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">
                         <i class="fa-solid fa-arrow-up-right-dots"></i>
                     </div>
-                    <h4 class="font-bold text-lg mb-4 text-slate-900">Advanced Quantitative Methods</h4>
+                    <h4 class="font-bold text-lg mb-4 text-slate-900">Computational Communication Science</h4>
                     <ul class="text-slate-500 text-sm space-y-3">
                         <li class="flex items-start">
                             <span class="mr-2 text-indigo-500">•</span>
-                            <span>Bayesian reasoning and model-based inference for social science questions</span>
+                            <span>Bayesian reasoning and model-based inference for social science phenomena</span>
                         </li>
                         <li class="flex items-start">
                             <span class="mr-2 text-indigo-500">•</span>
-                            <span>Computational approaches to measuring and explaining variation in human responses</span>
+                            <span>Computational approaches to quantifying and explaining variation in human behavior</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-indigo-500">•</span>
+                            <span>Causal inference for complex, large-scale communication data</span>
                         </li>
                     </ul>
                 </div>
         
-                <!-- 3. Emerging Media & Immersive Environments -->
                 <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:border-blue-200 transition-colors group">
                     <div class="text-blue-600 text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">
                         <i class="fa-solid fa-vr-cardboard"></i>
@@ -244,16 +245,12 @@
         </a>
     </div>
 
-    <!-- 4개만 보여줄 그리드 영역 -->
     <div id="preview-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- JS로 자동 생성됩니다 -->
     </div>
 </section>
 
-<!-- index.html 하단 스크립트 영역 -->
 <script src="data.js"></script>
 <script>
-// index.html의 스크립트 부분 수정
 function renderPreview() {
     const previewGrid = document.getElementById('preview-grid');
     const latestFour = presentationData.slice(0, 4);
@@ -274,7 +271,6 @@ function renderPreview() {
     `).join('');
 }
 
-// 모달 열기 함수 (presentations.html에서 복사해옴)
 function openModal(id) {
     const item = presentationData.find(p => p.id === id);
     if (!item) return;
@@ -303,7 +299,6 @@ function openModal(id) {
     document.body.style.overflow = 'hidden';
 }
 
-// 모달 닫기 함수 (단순히 닫기만 하도록 수정)
 function closeModal() {
     document.getElementById('modal').classList.add('hidden');
     document.body.style.overflow = 'auto';
