@@ -23,7 +23,7 @@ const presentationData = [
         image: "assets/presentations/images/015-image.png",
         pptLink: "assets/presentations/slides/015-slides.pdf",
         sessionPdf: "assets/presentations/sessions/015-session.pdf",
-        tags: ["Meta science", "Measurement", "Health communication"]
+        tags: ["Meta science", "Health communication"]
     },
     {
         id: "014",
@@ -116,7 +116,7 @@ const presentationData = [
         image: "assets/presentations/images/008-image.png",
         pptLink: "assets/presentations/slides/008-slides.pdf",
         sessionPdf: "assets/presentations/sessions/008-session.pdf",
-        tags: ["Scale development", "Measurement", "Strategic communication", "Sustainability"],
+        tags: ["Scale development", "Strategic communication", "Sustainability"],
         award: "Top Paper Award, International Communication Association (ICA), Korean American Communication Association (KACA) Research Session"
     },
     {
@@ -156,7 +156,7 @@ const presentationData = [
         image: "assets/presentations/images/005-image.png",
         pptLink: "assets/presentations/slides/005-slides.pdf",
         sessionPdf: "assets/presentations/sessions/005-session.pdf",
-        tags: ["Scale development", "Measurement", "Strategic communication", "Sustainability"]
+        tags: ["Scale development", "Strategic communication", "Sustainability"]
     },
     {
         id: "004",
