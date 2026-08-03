@@ -68,7 +68,7 @@ const presentationData = [
     {
         id: "011",
         emoji: "🎰",
-        title: "효과적인 복권 커뮤니케이션 전략: 수용자 세분화 분석을 중심으로",
+        title: "Effective Public Communication on Responsible Lottery Purchase: Audience Segmentation Strategy [효과적인 복권 커뮤니케이션 전략: 수용자 세분화 분석을 중심으로]",
         authors: "Ma, H. H., Lee, S., & Paek, H.-J.",
         date: "2024. 4. 19.",
         conference: "Korean Academic Society For Public Relations (KASPR)",
@@ -81,7 +81,7 @@ const presentationData = [
     {
         id: "010",
         emoji: "🪴",
-        title: "식품정보 리터러시가 대체식품 구매의도에 미치는 영향: 소비자의 정보추구행동과 대체식품 위험인식의 조절된 매개효과를 중심으로",
+        title: "The Influences of Food Literacy on the Intention to use Alternative Proteins: Moderated Mediation Effects of Consumers’ Information-seeking Behavior and Risk Perception [식품정보 리터러시가 대체식품 구매의도에 미치는 영향: 소비자의 정보추구행동과 대체식품 위험인식의 조절된 매개효과를 중심으로]",
         authors: "Choi, M. Y., Ma, H. H., & Oh, H. J.",
         date: "2023. 11. 24.",
         conference: "Korean Academic Society For Public Relations (KASPR)",
@@ -94,7 +94,7 @@ const presentationData = [
     {
         id: "009",
         emoji: "👾",
-        title: "메타버스를 이용한 건강 캠페인의 효과 평가 탐색: 식중독 예방 캠페인 ‘제페토 지킬박사월드’ 사례를 중심으로",
+        title: "Exploring the Effectiveness of Health Campaigns Using Metaverse: A Case Study of the ‘ZEPETO Dr. Jekyll's World’ Food Poisoning Prevention Campaign [메타버스를 이용한 건강 캠페인의 효과 평가 탐색: 식중독 예방 캠페인 ‘제페토 지킬박사월드’ 사례를 중심으로]",
         authors: "Ma, H. H., Choi, M. Y., Oh, J. H., & Paek, H.-J.",
         date: "2023. 6. 16.",
         conference: "Korea Health Communication Association (KHCA)",
@@ -148,7 +148,7 @@ const presentationData = [
     {
         id: "005",
         emoji: "🪴",
-        title: "조직의 ESG 활동에 대한 공중 인식 평가를 위한 소셜데이터 기반 Perceived ESG Index 개발",
+        title: "Development of a Social Data-Based Perceived ESG Index for Public Perception Evaluation of Organizational ESG Activities [조직의 ESG 활동에 대한 공중 인식 평가를 위한 소셜데이터 기반 Perceived ESG Index 개발]",
         authors: "Lee, B., Park, S. J., Oh, H. J., Jang, D. Y., Ma, H. H., & Cho, J. H.",
         date: "2022. 11. 25.",
         conference: "Korean Academic Society For Public Relations (KASPR)",
@@ -174,7 +174,7 @@ const presentationData = [
     {
         id: "003",
         emoji: "📈",
-        title: "헬스커뮤니케이션 캠페인의 인과효과 추정",
+        title: "Estimating Causal Effects of Health Communication Campaigns [헬스커뮤니케이션 캠페인의 인과효과 추정]",
         authors: "Ma, H. H. & Lee, B.",
         date: "2021. 11. 19.",
         conference: "Korea Health Communication Association (KHCA)",
@@ -187,7 +187,7 @@ const presentationData = [
     {
         id: "002",
         emoji: "📈",
-        title: "정부광고 인과 효과 평가 모델에 대한 탐색",
+        title: "Exploration of Evaluation Models for Government Advertising Effects [정부광고 인과 효과 평가 모델에 대한 탐색]",
         authors: "Ma, H. H. & Lee, B.",
         date: "2021. 6. 11.",
         conference: "Korea Health Communication Association (KHCA)",
@@ -200,7 +200,7 @@ const presentationData = [
     {
         id: "001",
         emoji: "📰",
-        title: "Media Framing of Dating Violence: Patterns in News Coverage [데이트 폭력 언론보도의 프레이밍 특성에 대한 연구]",
+        title: "A Study on the Framing Characteristics of Intimate Partner Violence Media Coverage [데이트 폭력 언론보도의 프레이밍 특성에 대한 연구]",
         authors: "Ma, H. H., Shin, J. W., Joo, D. H., Mang, S. W., & Lee, B.",
         date: "2018. 12. 7.",
         conference: "Korea Health Communication Association (KHCA)",
