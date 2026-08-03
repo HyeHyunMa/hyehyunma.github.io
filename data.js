@@ -36,7 +36,7 @@ const presentationData = [
         image: "assets/presentations/images/014-image.png",
         pptLink: "assets/presentations/slides/014-slides.pdf",
         sessionPdf: "assets/presentations/sessions/014-session.pdf",
-        tags: ["Bayesian inference", "Machine learning", "Journalism"],
+        tags: ["Bayesian", "Machine learning", "Journalism"],
         award: "Outstanding Graduate Student Paper Award, Korean Association For Communication And Information Studies (KACIS), Graduate Student Division"
     },
     {
@@ -50,7 +50,7 @@ const presentationData = [
         image: "assets/presentations/images/013-image.png",
         pptLink: "assets/presentations/slides/013-slides.pdf",
         sessionPdf: "assets/presentations/sessions/013-session.pdf",
-        tags: ["Public communication", "Health communication", "Experiment", "Strategic communication"]
+        tags: ["Health communication", "Experiment", "Strategic communication"]
     },
     {
         id: "012",
@@ -63,7 +63,7 @@ const presentationData = [
         image: "assets/presentations/images/012-image.jpeg",
         pptLink: "assets/presentations/slides/012-slides.pdf",
         sessionPdf: "assets/presentations/sessions/012-session.pdf",
-        tags: ["Meta science", "Virtual reality", "Social interaction", "Bayesian inference"]
+        tags: ["Meta science", "VR", "Social interaction", "Bayesian"]
     },
     {
         id: "011",
@@ -76,7 +76,7 @@ const presentationData = [
         image: "assets/presentations/images/011-image.jpeg",
         pptLink: "assets/presentations/slides/011-slides.pdf",
         sessionPdf: "assets/presentations/sessions/011-session.pdf",
-        tags: ["Public communication", "Health communication", "Clustering", "Machine learning", "Strategic communication"]
+        tags: ["Health communication", "Machine learning", "Strategic communication"]
     },
     {
         id: "010",
@@ -89,7 +89,7 @@ const presentationData = [
         image: "assets/presentations/images/010-image.jpeg",
         pptLink: "assets/presentations/slides/010-slides.pdf",
         sessionPdf: "assets/presentations/sessions/010-session.pdf",
-        tags: ["Sustainability", "Public communication", "Strategic communication"]
+        tags: ["Sustainability", "Strategic communication"]
     },
     {
         id: "009",
@@ -102,7 +102,7 @@ const presentationData = [
         image: "assets/presentations/images/009-image.png",
         pptLink: "assets/presentations/slides/009-slides.pdf",
         sessionPdf: "assets/presentations/sessions/009-session.pdf",
-        tags: ["Virtual reality", "Campaign evaluation", "Health communication"],
+        tags: ["VR", "Campaign evaluation", "Health communication"],
         award: "Best Paper Award, Enzaim / Korea Health Communication Association"
     },
     {
@@ -130,7 +130,7 @@ const presentationData = [
         image: "assets/presentations/images/007-image.png",
         pptLink: "assets/presentations/slides/007-slides.pdf",
         sessionPdf: "assets/presentations/sessions/007-session.pdf",
-        tags: ["Virtual reality", "Social interaction", "Experiment", "Bayesian inference"]
+        tags: ["VR", "Social interaction", "Experiment", "Bayesian"]
     },
     {
         id: "006",
@@ -143,7 +143,7 @@ const presentationData = [
         image: "assets/presentations/images/006-image.png",
         pptLink: "assets/presentations/slides/006-slides.pdf",
         sessionPdf: "assets/presentations/sessions/006-session.jpg",
-        tags: ["Virtual reality", "Social interaction", "Experiment"]
+        tags: ["VR", "Social interaction", "Experiment"]
     },
     {
         id: "005",
@@ -169,7 +169,7 @@ const presentationData = [
         image: "assets/presentations/images/004-image.png",
         pptLink: "assets/presentations/slides/004-slides.pdf",
         sessionPdf: "assets/presentations/sessions/004-session.jpg",
-        tags: ["Causal inference", "Bayesian inference", "Campaign evaluation", "Health communication", "Strategic communication"]
+        tags: ["Causal inference", "Bayesian", "Campaign evaluation", "Health communication", "Strategic communication"]
     },
     {
         id: "003",
@@ -182,7 +182,7 @@ const presentationData = [
         image: "assets/presentations/images/003-image.png",
         pptLink: "assets/presentations/slides/003-slides.pdf",
         sessionPdf: "assets/presentations/sessions/003-session.jpg",
-        tags: ["Causal inference", "Public communication", "Campaign evaluation", "Health communication"]
+        tags: ["Causal inference", "Campaign evaluation", "Health communication"]
     },
     {
         id: "002",
@@ -195,7 +195,7 @@ const presentationData = [
         image: "assets/presentations/images/002-image.png",
         pptLink: "assets/presentations/slides/002-slides.pdf",
         sessionPdf: "assets/presentations/sessions/002-session.jpg",
-        tags: ["Causal inference", "Public communication", "Campaign evaluation"]
+        tags: ["Causal inference", "Campaign evaluation"]
     },
     {
         id: "001",
