@@ -200,7 +200,7 @@ const presentationData = [
     {
         id: "001",
         emoji: "📰",
-        title: "데이트 폭력 언론보도의 프레이밍 특성에 대한 연구",
+        title: "Media Framing of Dating Violence: Patterns in News Coverage [데이트 폭력 언론보도의 프레이밍 특성에 대한 연구]",
         authors: "Ma, H. H., Shin, J. W., Joo, D. H., Mang, S. W., & Lee, B.",
         date: "2018. 12. 7.",
         conference: "Korea Health Communication Association (KHCA)",
@@ -208,6 +208,6 @@ const presentationData = [
         image: "assets/presentations/images/001-image.png",
         pptLink: "assets/presentations/slides/001-slides.pdf",
         sessionPdf: "assets/presentations/sessions/001-session.pdf",
-        tags: ["Journalism", "Content analysis"]
+        tags: ["Journalism"]
     }
 ];
