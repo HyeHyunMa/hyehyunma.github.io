@@ -127,7 +127,7 @@ const presentationData = [
         date: "2023. 5. 19.",
         conference: "Korean Society For Journalism And Communication Studies (KSJCS)",
         location: "Jeju, Korea",
-        image: "assets/presentations/images/007-image.png",
+        image: "assets/presentations/images/007-image-replace.png",
         pptLink: "assets/presentations/slides/007-slides.pdf",
         sessionPdf: "assets/presentations/sessions/007-session.pdf",
         tags: ["VR", "Social interaction", "Experiment", "Bayesian"]
@@ -192,7 +192,7 @@ const presentationData = [
         date: "2021. 6. 11.",
         conference: "Korea Health Communication Association (KHCA)",
         location: "Seoul, Korea",
-        image: "assets/presentations/images/002-image.png",
+        image: "assets/presentations/images/002-image-replace.png",
         pptLink: "assets/presentations/slides/002-slides.pdf",
         sessionPdf: "assets/presentations/sessions/002-session.jpg",
         tags: ["Causal inference", "Campaign evaluation"]
