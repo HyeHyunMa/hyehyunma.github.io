@@ -110,7 +110,7 @@ const presentationData = [
         image: "assets/presentations/images/011-image.jpeg",
         pptLink: "assets/presentations/slides/011-slides.pdf",
         sessionPdf: "assets/presentations/sessions/011-session.pdf",
-        tags: ["COMM, "ML"]
+        tags: ["COMM", "ML"]
     },
     {
         id: "010",
