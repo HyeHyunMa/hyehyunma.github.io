@@ -7,7 +7,7 @@ const publicationData = [
         venue: "Health Communication.",
         link: "https://doi.org/10.1080/10410236.2025.2573778",
         tags: ["COMM"],
-        award: null
+        award: "Best Paper Award - 2025 KHCA"
     },
     {
         id: "011-pub",
@@ -27,7 +27,7 @@ const publicationData = [
         venue: "Korean Journal of Journalism & Communication Studies, 69(4), 36-71.",
         link: "https://doi.org/10.20879/kjjcs.2025.69.4.002",
         tags: ["MS"],
-        award: null
+        award: "Best Paper Award of the Year - 2025 KSJCS"
     },
     {
         id: "009-pub",
@@ -87,7 +87,7 @@ const publicationData = [
         venue: "Public Relations Review, 50(1), 102398.",
         link: "https://doi.org/10.1016/j.pubrev.2023.102398",
         tags: ["COMM"],
-        award: null
+        award: "Top Paper Award - 2023 ICA"
     },
     {
         id: "003-pub",
