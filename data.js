@@ -70,7 +70,7 @@ const presentationData = [
         image: "assets/presentations/images/014-image.png",
         pptLink: "assets/presentations/slides/014-slides.pdf",
         sessionPdf: "assets/presentations/sessions/014-session.pdf",
-        tags: ["ML"],
+        tags: ["ML", "BAYES"],
         award: "Outstanding Graduate Student Paper Award, Korean Association For Communication And Information Studies (KACIS), Graduate Student Division"
     },
     {
@@ -97,7 +97,7 @@ const presentationData = [
         image: "assets/presentations/images/012-image.jpeg",
         pptLink: "assets/presentations/slides/012-slides.pdf",
         sessionPdf: "assets/presentations/sessions/012-session.pdf",
-        tags: ["MS", "VR"]
+        tags: ["MS", "VR", "BAYES"]
     },
     {
         id: "011",
@@ -150,7 +150,7 @@ const presentationData = [
         image: "assets/presentations/images/008-image.png",
         pptLink: "assets/presentations/slides/008-slides.pdf",
         sessionPdf: "assets/presentations/sessions/008-session.pdf",
-        tags: ["COMM"],
+        tags: [],
         award: "Top Paper Award, International Communication Association (ICA), Korean American Communication Association (KACA) Research Session"
     },
     {
@@ -164,7 +164,7 @@ const presentationData = [
         image: "assets/presentations/images/007-image-replace.png",
         pptLink: "assets/presentations/slides/007-slides.pdf",
         sessionPdf: "assets/presentations/sessions/007-session.pdf",
-        tags: ["VR"]
+        tags: ["VR", "BAYES"]
     },
     {
         id: "006",
@@ -190,7 +190,7 @@ const presentationData = [
         image: "assets/presentations/images/005-image.png",
         pptLink: "assets/presentations/slides/005-slides.pdf",
         sessionPdf: "assets/presentations/sessions/005-session.pdf",
-        tags: ["COMM"]
+        tags: []
     },
     {
         id: "004",
@@ -203,7 +203,7 @@ const presentationData = [
         image: "assets/presentations/images/004-image.png",
         pptLink: "assets/presentations/slides/004-slides.pdf",
         sessionPdf: "assets/presentations/sessions/004-session.jpg",
-        tags: ["CI", "COMM"]
+        tags: ["CI", "BAYES", "COMM"]
     },
     {
         id: "003",
