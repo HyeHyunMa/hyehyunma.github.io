@@ -6,7 +6,7 @@ const publicationData = [
         authors: "Ma, H. H., Lee, M., Kim, E., & Pang, S.",
         venue: "International Journal of Human–Computer Interaction, 1–17.",
         link: "https://doi.org/10.1080/10447318.2025.2526590",
-        tages: ["MS"],
+        tags: ["MS"],
         award: null
     },
     {
@@ -16,7 +16,7 @@ const publicationData = [
         authors: "Byoungkwan Lee, Hye Hyun Ma, Elena Kim, Shuyu Pang, & Taesu Kim",
         venue: "Korean Journal of Journalism & Communication Studies, 69(4), 36-71.",
         link: "https://doi.org/10.20879/kjjcs.2025.69.4.002",
-        tages: ["MS"],
+        tags: ["MS"],
         award: "Best Article Award of the Year, Korean Society For Journalism And Communication Studies"
     },
     {
@@ -26,7 +26,7 @@ const publicationData = [
         authors: "Hye Hyun Ma, Seo Yeon Keum, Shuyu Pang, JunHyeok Oh, Jin Lee & Byoungkwan Lee",
         venue: "Korean Journal of Journalism & Communication Studies, 67(4), 47-88.",
         link: "https://doi.org/10.20879/kjjcs.2023.67.4.002",
-        tages: ["VR"],
+        tags: ["VR"],
         award: null
     }
 ];
