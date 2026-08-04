@@ -32,12 +32,53 @@
     </nav>
 
     <main class="max-w-6xl mx-auto px-6 py-16">
-        <!-- Header -->
-        <header class="mb-12">
-            <div class="flex items-center gap-4 mb-4">
+<!-- Header -->
+        <header class="mb-8">
+            <div class="flex items-center gap-4 mb-2">
                 <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight">Conference Presentations</h1>
             </div>
         </header>
+
+        <!-- 1. 새로 추가할 약어 설명 박스 (Research Themes & Badges) -->
+        <div class="mb-8 p-6 bg-slate-50 border border-slate-100 rounded-2xl text-sm leading-relaxed text-slate-700">
+            <ul class="space-y-3 font-medium">
+                <li class="flex items-center flex-wrap gap-2">
+                    <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+                    <strong class="text-slate-900">Causal Inference & Evaluation</strong> 
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-600">CI</span>
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-600">CE</span>
+                    <span class="text-slate-500 font-normal">: Causal effect estimation and campaign evaluation methods.</span>
+                </li>
+                <li class="flex items-center flex-wrap gap-2">
+                    <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+                    <strong class="text-slate-900">Computational Methods</strong> 
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-indigo-100 text-indigo-600">ML</span>
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-sky-100 text-sky-600">BAY</span>
+                    <span class="text-slate-500 font-normal">: Machine learning and Bayesian statistical models.</span>
+                </li>
+                <li class="flex items-center flex-wrap gap-2">
+                    <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+                    <strong class="text-slate-900">Meta-Science & Measurement</strong> 
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-600">MS</span>
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-teal-100 text-teal-600">SD</span>
+                    <span class="text-slate-500 font-normal">: Evidence synthesis, statistical power, and scale development.</span>
+                </li>
+                <li class="flex items-center flex-wrap gap-2">
+                    <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+                    <strong class="text-slate-900">Health & Strategic Comm</strong> 
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-600">HC</span>
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-violet-100 text-violet-600">SC</span>
+                    <span class="text-slate-500 font-normal">: Health communication and strategic public campaigns.</span>
+                </li>
+                <li class="flex items-center flex-wrap gap-2">
+                    <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+                    <strong class="text-slate-900">Emerging Media & HCI</strong> 
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-purple-100 text-purple-600">VR</span>
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-fuchsia-100 text-fuchsia-600">SI</span>
+                    <span class="text-slate-500 font-normal">: User experiences and social interactions in VR/Metaverse environments.</span>
+                </li>
+            </ul>
+        </div>
 
         <!-- Tag Filter -->
         <div id="tag-container" class="flex flex-wrap gap-2 mb-12">
