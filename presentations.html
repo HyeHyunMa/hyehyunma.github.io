@@ -178,6 +178,26 @@
                 </div>
             `).join('');
         }
+
+        function renderBadges(tags) {
+        if (!tags || tags.length === 0) return '';
+        
+        // 태그별 색상 설정
+        const colors = {
+            'ML': 'bg-rose-100 text-rose-600 border-rose-300',
+            'CE': 'bg-amber-100 text-amber-600 border-amber-300',
+            'ML': 'bg-indigo-100 text-indigo-600 border-indigo-300',
+            'BAYES': 'bg-sky-100 text-sky-600 border-sky-300',
+            'MS': 'bg-emerald-100 text-emerald-600 border-emerald-300',
+            'COMM': 'bg-blue-100 text-blue-600 border-blue-300',
+            'VR': 'bg-purple-100 text-purple-600 border-purple-300',
+        };
+    
+        return tags.map(tag => {
+            const style = colors[tag] || 'bg-slate-100 text-slate-600 border-slate-300';
+            return `<span class="inline-block px-1.5 py-0.5 rounded-full text-[11px] font-bold border ${style} mr-1 align-middle">${tag}</span>`;
+        }).join('');
+        }
         
         function renderTags() {
             const tagContainer = document.getElementById('tag-container');
