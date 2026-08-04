@@ -13,9 +13,8 @@
 </head>
 <body class="bg-white text-slate-800 leading-relaxed">
 
-    <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
-        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="text-lg font-bold tracking-tight text-slate-900">HYE HYUN MA</a>
             <div class="hidden md:flex space-x-8 text-sm font-medium">
                 <a href="index.html#about" class="text-slate-500 hover:text-blue-600 transition">About</a>
@@ -28,78 +27,168 @@
         </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-6 py-16 space-y-12">
-        <!-- Header -->
-        <header class="border-b border-slate-100 pb-8">
+    <main class="max-w-6xl mx-auto px-6 py-16">
+        <header class="mb-8">
             <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Publications</h1>
             <p class="text-slate-500 text-sm">
-                Citation metrics and additional research information are available on 
-                <a href="https://scholar.google.com/citations?user=4ROFv34AAAAJ" target="_blank" class="text-blue-600 font-semibold hover:underline">Google Scholar</a> 
-                or 
-                <a href="https://www.researchgate.net/profile/Hyehyun-Ma" target="_blank" class="text-blue-600 font-semibold hover:underline">ResearchGate</a> profile.
+                Citation metrics and additional research information are available on
+                <a href="https://scholar.google.com/citations?user=4ROFv34AAAAJ" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-semibold hover:underline">Google Scholar</a>
+                or
+                <a href="https://www.researchgate.net/profile/Hyehyun-Ma" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-semibold hover:underline">ResearchGate</a>.
             </p>
         </header>
 
-        <!-- Publications Container (연도별로 JS가 자동 생성함) -->
+        <div class="mb-8 pb-8 border-b border-slate-200">
+            <p class="mb-4 text-sm text-slate-600">My research centers on:</p>
+            <ul class="space-y-2.5 text-sm text-slate-700 font-normal">
+                <li class="flex items-center flex-wrap gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                    <strong class="text-slate-900 font-bold">Causal Inference</strong>
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-rose-100 text-rose-600 border border-rose-300">CI</span>
+                    <span class="text-slate-500">: Estimating causal and heterogeneous effects in communication and campaign research.</span>
+                </li>
+                <li class="flex items-center flex-wrap gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                    <strong class="text-slate-900 font-bold">Computational Methods</strong>
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-600 border border-amber-300">ML</span>
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-indigo-100 text-indigo-600 border border-indigo-300">BAYES</span>
+                    <span class="text-slate-500">: Applying machine learning, Bayesian modeling, and computational approaches to communication data.</span>
+                </li>
+                <li class="flex items-center flex-wrap gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                    <strong class="text-slate-900 font-bold">Meta-Science</strong>
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-600 border border-emerald-300">MS</span>
+                    <span class="text-slate-500">: Examining statistical power, replicability, evidence quality, and methodological and reporting practices.</span>
+                </li>
+                <li class="flex items-center flex-wrap gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                    <strong class="text-slate-900 font-bold">Public Communication Campaign</strong>
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-sky-100 text-sky-600 border border-sky-300">COMM</span>
+                    <span class="text-slate-500">: Studying health, risk, and public-interest communication, with a focus on campaign strategy and evaluation.</span>
+                </li>
+                <li class="flex items-center flex-wrap gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                    <strong class="text-slate-900 font-bold">Virtual Environments &amp; Social Interaction</strong>
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-purple-100 text-purple-600 border border-purple-300">VR</span>
+                    <span class="text-slate-500">: Investigating user experiences, social interaction, and interpersonal communication in virtual environments.</span>
+                </li>
+            </ul>
+        </div>
+
+        <div id="tag-container" class="flex flex-wrap gap-2 mb-12"></div>
         <div id="publications-container" class="space-y-12"></div>
     </main>
 
-    <footer class="max-w-4xl mx-auto px-6 py-16 border-t border-slate-100 text-center">
+    <footer class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-100 text-center">
         <p class="text-xs font-medium text-slate-400 tracking-wider">&copy; 2026 HYEHYUN MA. ALL RIGHTS RESERVED.</p>
     </footer>
 
     <script src="data.js"></script>
     <script>
+        let currentTag = 'All';
+        const tagOrder = ['CI', 'COMM', 'ML', 'MS', 'BAYES', 'VR'];
+
+        const tagColors = {
+            CI: 'bg-rose-100 text-rose-600 border-rose-300',
+            COMM: 'bg-sky-100 text-sky-600 border-sky-300',
+            ML: 'bg-amber-100 text-amber-600 border-amber-300',
+            MS: 'bg-emerald-100 text-emerald-600 border-emerald-300',
+            BAYES: 'bg-indigo-100 text-indigo-600 border-indigo-300',
+            VR: 'bg-purple-100 text-purple-600 border-purple-300'
+        };
+
+        function highlightAuthors(authors = '') {
+            return authors
+                .replace(/Hye Hyun Ma/g, '<strong class="text-slate-900 font-bold">Hye Hyun Ma</strong>')
+                .replace(/Ma, H\. H\./g, '<strong class="text-slate-900 font-bold">Ma, H. H.</strong>');
+        }
+
+        function renderBadges(tags = []) {
+            return tags.map(tag => {
+                const color = tagColors[tag] || 'bg-slate-100 text-slate-600 border-slate-300';
+                return `<span class="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold border ${color}">${tag}</span>`;
+            }).join('');
+        }
+
+        function getFilteredData() {
+            if (!Array.isArray(publicationData)) return [];
+            if (currentTag === 'All') return [...publicationData];
+            return publicationData.filter(item => Array.isArray(item.tags) && item.tags.includes(currentTag));
+        }
+
+        function renderTags() {
+            const tagContainer = document.getElementById('tag-container');
+            const usedTags = new Set(publicationData.flatMap(item => Array.isArray(item.tags) ? item.tags : []));
+            const tags = ['All', ...tagOrder.filter(tag => usedTags.has(tag))];
+
+            tagContainer.innerHTML = tags.map(tag => `
+                <button type="button" data-tag="${tag}"
+                    class="tag-btn px-4 py-1.5 rounded-full text-xs font-extrabold transition border ${
+                        tag === currentTag
+                            ? 'bg-slate-900 text-white border-slate-900'
+                            : 'bg-white text-slate-600 border-slate-200 hover:border-slate-400'
+                    }">
+                    ${tag}
+                </button>
+            `).join('');
+
+            tagContainer.querySelectorAll('.tag-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    currentTag = button.dataset.tag;
+                    renderTags();
+                    renderPublications();
+                });
+            });
+        }
+
         function renderPublications() {
             const container = document.getElementById('publications-container');
-            if (!publicationData || publicationData.length === 0) return;
+            const filteredData = getFilteredData().sort((a, b) => Number(b.year) - Number(a.year));
 
-            // 1. 연도 내림차순 정렬
-            const sortedData = [...publicationData].sort((a, b) => b.year - a.year);
+            if (filteredData.length === 0) {
+                container.innerHTML = '<p class="text-sm text-slate-500">No publications match this filter.</p>';
+                return;
+            }
 
-            // 2. 연도 그룹핑
-            const grouped = sortedData.reduce((acc, item) => {
-                acc[item.year] = acc[item.year] || [];
-                acc[item.year].push(item);
+            const grouped = filteredData.reduce((acc, item) => {
+                const year = item.year || 'Undated';
+                if (!acc[year]) acc[year] = [];
+                acc[year].push(item);
                 return acc;
             }, {});
 
-            // 3. HTML 생성
-            const years = Object.keys(grouped).sort((a, b) => b - a);
-            
+            const years = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
+
             container.innerHTML = years.map(year => `
                 <section class="space-y-6">
                     <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2">${year}</h2>
-                    <div class="space-y-6">
-                        ${grouped[year].map(item => {
-                            // 저자 이름 중 'Hye Hyun Ma', 'Ma, H. H.' 등을 볼드 처리하는 유틸리티
-                            const highlightedAuthors = item.authors
-                                .replace(/Hye Hyun Ma/g, '<strong class="text-slate-900 font-bold">Hye Hyun Ma</strong>')
-                                .replace(/Ma, H\. H\./g, '<strong class="text-slate-900 font-bold">Ma, H. H.</strong>');
-
-                            return `
-                                <div class="space-y-1.5">
-                                    <div class="flex flex-wrap items-center gap-2">
-                                        ${item.type ? `<span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded tracking-wider uppercase">${item.type}</span>` : ''}
-                                        ${item.award ? `<span class="text-[10px] font-bold text-amber-700 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded flex items-center gap-1">🏆 ${item.award}</span>` : ''}
-                                    </div>
-                                    <h3 class="text-base font-bold text-slate-900 leading-snug">
-                                        <a href="${item.link || '#'}" target="_blank" class="hover:text-blue-600 transition inline-flex items-center gap-1">
-                                            ${item.title}
-                                            <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"></i>
-                                        </a>
-                                    </h3>
-                                    <p class="text-xs text-slate-600 leading-relaxed">${highlightedAuthors}</p>
-                                    <p class="text-xs text-slate-500 italic">${item.venue}</p>
+                    <div class="space-y-7">
+                        ${grouped[year].map(item => `
+                            <article class="space-y-1.5">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    ${item.type ? `<span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded tracking-wider uppercase">${item.type}</span>` : ''}
+                                    ${renderBadges(item.tags)}
+                                    ${item.award ? `<span class="text-[10px] font-bold text-amber-700 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded flex items-center gap-1">🏆 ${item.award}</span>` : ''}
                                 </div>
-                            `;
-                        }).join('')}
+                                <h3 class="text-base font-bold text-slate-900 leading-snug">
+                                    <a href="${item.link || '#'}" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition inline-flex items-start gap-1">
+                                        <span>${item.title}</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 mt-1"></i>
+                                    </a>
+                                </h3>
+                                <p class="text-xs text-slate-600 leading-relaxed">${highlightAuthors(item.authors)}</p>
+                                <p class="text-xs text-slate-500 italic">${item.venue || ''}</p>
+                            </article>
+                        `).join('')}
                     </div>
                 </section>
             `).join('');
         }
 
-        window.onload = renderPublications;
+        window.addEventListener('DOMContentLoaded', () => {
+            renderTags();
+            renderPublications();
+        });
     </script>
 </body>
 </html>
