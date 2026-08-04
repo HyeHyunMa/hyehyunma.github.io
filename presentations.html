@@ -178,12 +178,16 @@
                 </div>
             `).join('');
         }
-
+        
         function renderTags() {
             const tagContainer = document.getElementById('tag-container');
-            // data.js에 있는 모든 태그를 중복 없이 가져옴
-            const allTags = ['All', ...new Set(presentationData.flatMap(item => item.tags))];
             
+            // data.js에서 사용된 모든 태그 수집
+            const rawTags = [...new Set(presentationData.flatMap(item => item.tags || []))];
+            
+            // 맨 앞에 'All'을 무조건 배치
+            const allTags = ['All', ...rawTags];
+        
             tagContainer.innerHTML = allTags.map(tag => `
                 <button onclick="filterByTag('${tag}')" 
                         class="tag-btn px-4 py-1.5 rounded-full text-xs font-extrabold transition border ${tag === currentTag ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-600 border-slate-200 hover:border-slate-400'}">
@@ -191,11 +195,18 @@
                 </button>
             `).join('');
         }
-
+        
         function filterByTag(tag) {
             currentTag = tag;
-            renderTags();
-            renderGallery();
+            renderTags(); // 버튼 활성화 상태 업데이트
+            
+            // 'All'을 누르면 모든 데이터, 특정 태그 선택 시 필터링된 데이터
+            const filteredData = (tag === 'All') 
+                ? presentationData 
+                : presentationData.filter(item => item.tags && item.tags.includes(tag));
+                
+            // 시간순(ID 역순 또는 날짜순) 정렬 출력
+            renderPresentations(filteredData);
         }
 
         function openModal(id) {
