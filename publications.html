@@ -144,41 +144,71 @@
 
         function renderPublications() {
             const container = document.getElementById('publications-container');
-            const filteredData = getFilteredData().sort((a, b) => Number(b.year) - Number(a.year));
-
+            const filteredData = getFilteredData()
+                .sort((a, b) => Number(b.year) - Number(a.year));
+        
             if (filteredData.length === 0) {
-                container.innerHTML = '<p class="text-sm text-slate-500">No publications match this filter.</p>';
+                container.innerHTML =
+                    '<p class="text-sm text-slate-500">No publications match this filter.</p>';
                 return;
             }
-
+        
             const grouped = filteredData.reduce((acc, item) => {
                 const year = item.year || 'Undated';
-                if (!acc[year]) acc[year] = [];
+        
+                if (!acc[year]) {
+                    acc[year] = [];
+                }
+        
                 acc[year].push(item);
                 return acc;
             }, {});
-
-            const years = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
-
+        
+            const years = Object.keys(grouped)
+                .sort((a, b) => Number(b) - Number(a));
+        
             container.innerHTML = years.map(year => `
                 <section class="space-y-6">
-                    <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2">${year}</h2>
+                    <h2 class="text-2xl font-bold text-slate-900 border-b border-slate-200 pb-2">
+                        ${year}
+                    </h2>
+        
                     <div class="space-y-7">
                         ${grouped[year].map(item => `
                             <article class="space-y-1.5">
                                 <div class="flex flex-wrap items-center gap-2">
-                                    ${item.type ? `<span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded tracking-wider uppercase">${item.type}</span>` : ''}
+                                    ${item.type ? `
+                                        <span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded tracking-wider uppercase">
+                                            ${item.type}
+                                        </span>
+                                    ` : ''}
+        
                                     ${renderBadges(item.tags)}
-                                    ${item.award ? `<span class="text-[10px] font-bold text-amber-700 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded flex items-center gap-1">🏆 ${item.award}</span>` : ''}
+        
+                                    ${item.award ? `
+                                        <span class="text-[10px] font-bold text-amber-700 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded flex items-center gap-1">
+                                            🏆 ${item.award}
+                                        </span>
+                                    ` : ''}
                                 </div>
+        
                                 <h3 class="text-base font-bold text-slate-900 leading-snug">
-                                    <a href="${item.link || '#'}" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 transition inline-flex items-start gap-1">
+                                    <a href="${item.link || '#'}"
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       class="hover:text-blue-600 transition inline-flex items-start gap-1">
                                         <span>${item.title}</span>
                                         <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 mt-1"></i>
                                     </a>
                                 </h3>
-                                <p class="text-xs text-slate-600 leading-relaxed">${highlightAuthors(item.authors)}</p>
-                                <p class="text-xs text-slate-500 italic">${item.venue || ''}</p>
+        
+                                <p class="text-xs text-slate-600 leading-relaxed">
+                                    ${highlightAuthors(item.authors)}
+                                </p>
+        
+                                <p class="text-xs text-slate-500 italic">
+                                    ${item.venue || ''}
+                                </p>
                             </article>
                         `).join('')}
                     </div>
