@@ -1,15 +1,17 @@
 const publicationData = [
     {
+        id: "003-pub",
         year: "2025",
         title: "The Effects of Virtual Social Touch on Interpersonal Communication Outcomes in Virtual Environments: A Meta-Analysis",
         authors: "Ma, H. H., Lee, M., Kim, E., & Pang, S.",
         venue: "International Journal of Human–Computer Interaction, 1–17.",
         link: "https://doi.org/10.1080/10447318.2025.2526590",
+        tages: ["MS"],
         award: null
     },
     {
+        id: "002-pub",
         year: "2025",
-        type: "Journal Article",
         title: "Replicability of Communication Research in Korea: Evidence of Publication Bias and p-Hacking",
         authors: "Byoungkwan Lee, Hye Hyun Ma, Elena Kim, Shuyu Pang, & Taesu Kim",
         venue: "Korean Journal of Journalism & Communication Studies, 69(4), 36-71.",
@@ -18,8 +20,8 @@ const publicationData = [
         award: "Best Article Award of the Year, Korean Society For Journalism And Communication Studies"
     },
     {
+        id: "001-pub",
         year: "2023",
-        type: "Journal Article",
         title: "The Influences of Nonverbal Communication Cues of Avatars on Self-Disclosure in Immersive Social VR: Focusing on Inter-Avatar Distance and Physical Attractiveness of the Interlocutor’s Avatar",
         authors: "Hye Hyun Ma, Seo Yeon Keum, Shuyu Pang, JunHyeok Oh, Jin Lee & Byoungkwan Lee",
         venue: "Korean Journal of Journalism & Communication Studies, 67(4), 47-88.",
