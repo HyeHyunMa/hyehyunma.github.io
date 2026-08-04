@@ -44,7 +44,7 @@ const presentationData = [
         image: "assets/presentations/images/016-image.png",
         pptLink: "assets/presentations/slides/016-slides.pdf",
         sessionPdf: "assets/presentations/sessions/016-session.jpg",
-        tags: ["Causal inference", "Campaign evaluation", "Health communication", "Machine learning"]
+        tags: ["CI", "HC", "ML"]
     },
     {
         id: "015",
@@ -57,7 +57,7 @@ const presentationData = [
         image: "assets/presentations/images/015-image.png",
         pptLink: "assets/presentations/slides/015-slides.pdf",
         sessionPdf: "assets/presentations/sessions/015-session.pdf",
-        tags: ["Meta science", "Health communication"]
+        tags: ["MS", "HC"]
     },
     {
         id: "014",
@@ -70,7 +70,7 @@ const presentationData = [
         image: "assets/presentations/images/014-image.png",
         pptLink: "assets/presentations/slides/014-slides.pdf",
         sessionPdf: "assets/presentations/sessions/014-session.pdf",
-        tags: ["Bayesian", "Machine learning", "Journalism"],
+        tags: ["ML"],
         award: "Outstanding Graduate Student Paper Award, Korean Association For Communication And Information Studies (KACIS), Graduate Student Division"
     },
     {
@@ -84,7 +84,7 @@ const presentationData = [
         image: "assets/presentations/images/013-image.png",
         pptLink: "assets/presentations/slides/013-slides.pdf",
         sessionPdf: "assets/presentations/sessions/013-session.pdf",
-        tags: ["Health communication", "Experiment", "Strategic communication"]
+        tags: ["HC"]
     },
     {
         id: "012",
@@ -97,7 +97,7 @@ const presentationData = [
         image: "assets/presentations/images/012-image.jpeg",
         pptLink: "assets/presentations/slides/012-slides.pdf",
         sessionPdf: "assets/presentations/sessions/012-session.pdf",
-        tags: ["Meta science", "VR", "Social interaction", "Bayesian"]
+        tags: ["MS", "VR"]
     },
     {
         id: "011",
@@ -110,7 +110,7 @@ const presentationData = [
         image: "assets/presentations/images/011-image.jpeg",
         pptLink: "assets/presentations/slides/011-slides.pdf",
         sessionPdf: "assets/presentations/sessions/011-session.pdf",
-        tags: ["Health communication", "Machine learning", "Strategic communication"]
+        tags: ["HC, "ML"]
     },
     {
         id: "010",
@@ -123,7 +123,7 @@ const presentationData = [
         image: "assets/presentations/images/010-image.jpeg",
         pptLink: "assets/presentations/slides/010-slides.pdf",
         sessionPdf: "assets/presentations/sessions/010-session.pdf",
-        tags: ["Sustainability", "Strategic communication"]
+        tags: ["HC"]
     },
     {
         id: "009",
@@ -136,7 +136,7 @@ const presentationData = [
         image: "assets/presentations/images/009-image.png",
         pptLink: "assets/presentations/slides/009-slides.pdf",
         sessionPdf: "assets/presentations/sessions/009-session.pdf",
-        tags: ["VR", "Campaign evaluation", "Health communication"],
+        tags: ["VR", "CI", "HC"],
         award: "Best Paper Award, Enzaim / Korea Health Communication Association"
     },
     {
@@ -150,7 +150,7 @@ const presentationData = [
         image: "assets/presentations/images/008-image.png",
         pptLink: "assets/presentations/slides/008-slides.pdf",
         sessionPdf: "assets/presentations/sessions/008-session.pdf",
-        tags: ["Scale development", "Strategic communication", "Sustainability"],
+        tags: ["HC"],
         award: "Top Paper Award, International Communication Association (ICA), Korean American Communication Association (KACA) Research Session"
     },
     {
@@ -164,7 +164,7 @@ const presentationData = [
         image: "assets/presentations/images/007-image-replace.png",
         pptLink: "assets/presentations/slides/007-slides.pdf",
         sessionPdf: "assets/presentations/sessions/007-session.pdf",
-        tags: ["VR", "Social interaction", "Experiment", "Bayesian"]
+        tags: ["VR"]
     },
     {
         id: "006",
@@ -177,7 +177,7 @@ const presentationData = [
         image: "assets/presentations/images/006-image.png",
         pptLink: "assets/presentations/slides/006-slides.pdf",
         sessionPdf: "assets/presentations/sessions/006-session.jpg",
-        tags: ["VR", "Social interaction", "Experiment"]
+        tags: ["VR"]
     },
     {
         id: "005",
@@ -190,7 +190,7 @@ const presentationData = [
         image: "assets/presentations/images/005-image.png",
         pptLink: "assets/presentations/slides/005-slides.pdf",
         sessionPdf: "assets/presentations/sessions/005-session.pdf",
-        tags: ["Scale development", "Strategic communication", "Sustainability"]
+        tags: ["HC"]
     },
     {
         id: "004",
@@ -203,7 +203,7 @@ const presentationData = [
         image: "assets/presentations/images/004-image.png",
         pptLink: "assets/presentations/slides/004-slides.pdf",
         sessionPdf: "assets/presentations/sessions/004-session.jpg",
-        tags: ["Causal inference", "Bayesian", "Campaign evaluation", "Health communication", "Strategic communication"]
+        tags: ["CI", "HC"]
     },
     {
         id: "003",
@@ -216,7 +216,7 @@ const presentationData = [
         image: "assets/presentations/images/003-image.png",
         pptLink: "assets/presentations/slides/003-slides.pdf",
         sessionPdf: "assets/presentations/sessions/003-session.jpg",
-        tags: ["Causal inference", "Campaign evaluation", "Health communication"]
+        tags: ["CI", "HC"]
     },
     {
         id: "002",
@@ -229,7 +229,7 @@ const presentationData = [
         image: "assets/presentations/images/002-image-replace.png",
         pptLink: "assets/presentations/slides/002-slides.pdf",
         sessionPdf: "assets/presentations/sessions/002-session.jpg",
-        tags: ["Causal inference", "Campaign evaluation"]
+        tags: ["CI"]
     },
     {
         id: "001",
@@ -242,6 +242,6 @@ const presentationData = [
         image: "assets/presentations/images/001-image.png",
         pptLink: "assets/presentations/slides/001-slides.pdf",
         sessionPdf: "assets/presentations/sessions/001-session.pdf",
-        tags: ["Journalism"]
+        tags: []
     }
 ];
