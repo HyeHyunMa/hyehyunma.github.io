@@ -1,32 +1,122 @@
 const publicationData = [
     {
-        id: "003-pub",
+        id: "012-pub",
+        year: "2025",
+        title: "The Role of Risk Perception and Information-Seeking in Acceptance of Alternative Proteins",
+        authors: "Choi, M. Y., Ma, H. H., & Oh, H. J.",
+        venue: "Health Communication.",
+        link: "https://doi.org/10.1080/10410236.2025.2573778",
+        tags: ["COMM"],
+        award: null
+    },
+    {
+        id: "011-pub",
+        year: "2025",
+        title: "Effects of Cognitive Distortions, Lottery-Related Social Relationships, and Media Campaign Exposure on Excessive Lottery Behavior: Implications for Responsible Lottery Campaign Strategies",
+        authors: "Paek, H.-J., & Ma, H. H.*",
+        venue: "Journal of Public Relations, 29(4), 1-30.",
+        link: "https://doi.org/10.15814/jpr.2025.29.4.1",
+        tags: ["COMM"],
+        award: null
+    },
+    {
+        id: "010-pub",
+        year: "2025",
+        title: "Replicability of Communication Research in Korea: Evidence of Publication Bias and p-Hacking",
+        authors: "Lee, B., Ma, H. H.*, Kim, E., Pang, S., & Kim, T.",
+        venue: "Korean Journal of Journalism & Communication Studies, 69(4), 36-71.",
+        link: "https://doi.org/10.20879/kjjcs.2025.69.4.002",
+        tags: ["MS"],
+        award: null
+    },
+    {
+        id: "009-pub",
         year: "2025",
         title: "The Effects of Virtual Social Touch on Interpersonal Communication Outcomes in Virtual Environments: A Meta-Analysis",
         authors: "Ma, H. H., Lee, M., Kim, E., & Pang, S.",
         venue: "International Journal of Human–Computer Interaction, 1–17.",
         link: "https://doi.org/10.1080/10447318.2025.2526590",
-        tags: ['CI', 'COMM', 'ML', 'MS', 'BAYES', 'VR'],
+        tags: ["MS", "VR", "BAYES"],
+        award: null
+    },
+    {
+        id: "008-pub",
+        year: "2025",
+        title: "Effectiveness of Foodborne Disease Prevention Campaign through Metaverse in South Korea: Integrating User Experience and Technology Acceptance Factors",
+        authors: "Ma, H. H., Choi, M. Y., & Paek, H.-J.",
+        venue: "Health Communication Research, 24(2), 121-144.",
+        link: "https://doi.org/10.24172/hcr.2025.24.2.121",
+        tags: ["COMM", "VR", "CI"],
+        award: null
+    },
+    {
+        id: "007-pub",
+        year: "2025",
+        title: "Using Webtoons for Public Service Communication: Factors Associated with Promoting Sound Lottery Behavior",
+        authors: "Hove, T., Ma, H. H., & Paek, H. J.",
+        venue: "Journal of Digital Contents Society, 26(3), 635-644.",
+        link: "http://dx.doi.org/10.9728/dcs.2025.26.3.635",
+        tags: ["COMM"],
+        award: null
+    },
+    {
+        id: "006-pub",
+        year: "2024",
+        title: "The Study on Content Analysis of Deceptive Advertising of Print Media since 2009",
+        authors: "Jeon, M. H., Ma, H. H., Lee, M. J., & Shim, S. W.",
+        venue: "The Korean Advertising & PR Practitioners Society, 17(4), 129-159.",
+        link: "https://doi.org/10.21331/jprapr.2024.17.4.005",
+        tags: [],
+        award: null
+    },
+    {
+        id: "005-pub",
+        year: "2024",
+        title: "How the Use of Environmental Information through Media Leads to Pro-environmental Behavior: Roles of Information Insufficiency and Information Gathering Capacity in Information Processing",
+        authors: "Lee, C. E., Ma, H. H., & Paek, H.-J.",
+        venue: "Korean Journal of Journalism & Communication Studies, 68(5), 196-232.",
+        link: "https://doi.org/10.20879/kjjcs.2024.68.5.006",
+        tags: ["COMM"],
+        award: null
+    },
+    {
+        id: "004-pub",
+        year: "2024",
+        title: "A preliminary study for developing perceived ESG scale to measure public perception toward organizations’ ESG performance",
+        authors: "Oh, H. J., Lee, B., Ma, H. H., Jang, D., & Park, S.",
+        venue: "Public Relations Review, 50(1), 102398.",
+        link: "https://doi.org/10.1016/j.pubrev.2023.102398",
+        tags: ["COMM"],
+        award: null
+    },
+    {
+        id: "003-pub",
+        year: "2023",
+        title: "The Influences of Nonverbal Communication Cues of Avatars on Self-Disclosure in Immersive Social VR: Focusing on Inter-Avatar Distance and Physical Attractiveness of the Interlocutor’s Avatar",
+        authors: "Ma, H. H., Keum, S. Y., Pang, S., Oh, J. H., Lee, J., & Lee, B.",
+        venue: "Korean Journal of Journalism & Communication Studies, 67(4), 47-88.",
+        link: "https://doi.org/10.20879/kjjcs.2023.67.4.002",
+        tags: ["VR", "BAYES"],
         award: null
     },
     {
         id: "002-pub",
-        year: "2025",
-        title: "Replicability of Communication Research in Korea: Evidence of Publication Bias and p-Hacking",
-        authors: "Byoungkwan Lee, Hye Hyun Ma, Elena Kim, Shuyu Pang, & Taesu Kim",
-        venue: "Korean Journal of Journalism & Communication Studies, 69(4), 36-71.",
-        link: "https://doi.org/10.20879/kjjcs.2025.69.4.002",
-        tags: ["MS"],
-        award: "Best Article Award of the Year, Korean Society For Journalism And Communication Studies"
+        year: "2022",
+        title: "Applying Bayesian Structural Time-series Models to Estimate the Effectiveness of Public Advertising: Causal Impact of Television Anti-Smoking Campaign on Tobacco Sales in Korea",
+        authors: "Ma, H. H., & Lee, B.",
+        venue: "The Korean Journal of Advertising, 33(8), 7-30.",
+        link: "https://doi.org/10.14377/KJA.2022.11.30.7",
+        tags: ["COMM", "BAYES", "CI"],
+        award: null
     },
     {
         id: "001-pub",
-        year: "2023",
-        title: "The Influences of Nonverbal Communication Cues of Avatars on Self-Disclosure in Immersive Social VR: Focusing on Inter-Avatar Distance and Physical Attractiveness of the Interlocutor’s Avatar",
-        authors: "Hye Hyun Ma, Seo Yeon Keum, Shuyu Pang, JunHyeok Oh, Jin Lee & Byoungkwan Lee",
-        venue: "Korean Journal of Journalism & Communication Studies, 67(4), 47-88.",
-        link: "https://doi.org/10.20879/kjjcs.2023.67.4.002",
-        tags: ["VR"],
+        year: "2019",
+        title: "The Study on Unjustice Indication and Advertising during 10 years since 2009",
+        authors: "Ma, H. H., & Shim, S. W.",
+        venue: "Review of Culture and Economy, 22(3), 117-152.",
+        link: "https://doi.org/10.36234/kace.2019.22.3.117",
+        tags: [],
         award: null
     }
 ];
