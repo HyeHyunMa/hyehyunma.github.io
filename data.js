@@ -6,7 +6,7 @@ const publicationData = [
         authors: "Ma, H. H., Lee, M., Kim, E., & Pang, S.",
         venue: "International Journal of Human–Computer Interaction, 1–17.",
         link: "https://doi.org/10.1080/10447318.2025.2526590",
-        tags: ["MS"],
+        tags: ['CI', 'COMM', 'ML', 'MS', 'BAYES', 'VR'],
         award: null
     },
     {
