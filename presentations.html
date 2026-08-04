@@ -225,13 +225,7 @@
             currentTag = tag;
             renderTags(); // 버튼 활성화 상태 업데이트
             
-            // 'All'을 누르면 모든 데이터, 특정 태그 선택 시 필터링된 데이터
-            const filteredData = (tag === 'All') 
-                ? presentationData 
-                : presentationData.filter(item => item.tags && item.tags.includes(tag));
-                
-            // 시간순(ID 역순 또는 날짜순) 정렬 출력
-            renderPresentations(filteredData);
+            renderGallery();
         }
 
         function openModal(id) {
