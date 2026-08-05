@@ -106,7 +106,7 @@ const publicationData = [
         authors: "Ma, H. H., & Lee, B.",
         venue: "The Korean Journal of Advertising, 33(8), 7-30.",
         link: "https://doi.org/10.14377/KJA.2022.11.30.7",
-        tags: ["PCC", "BAYES", "CI"],
+        tags: ["PCC", "BAYES", "CI", "ML"],
         award: null
     },
     {
@@ -293,7 +293,7 @@ const presentationData = [
         image: "assets/presentations/images/004-image.png",
         pptLink: "assets/presentations/slides/004-slides.pdf",
         sessionPdf: "assets/presentations/sessions/004-session.jpg",
-        tags: ["CI", "BAYES", "PCC"]
+        tags: ["CI", "BAYES", "PCC", "ML"]
     },
     {
         id: "003",
