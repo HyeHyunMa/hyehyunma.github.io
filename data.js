@@ -1,7 +1,7 @@
 const publicationData = [
     {
         id: "012-pub",
-        year: "2025",
+        year: "2026",
         title: "The Role of Risk Perception and Information-Seeking in Acceptance of Alternative Proteins",
         authors: "Choi, M. Y., Ma, H. H., & Oh, H. J.",
         venue: "Health Communication, 41(9), 1507–1518.",
@@ -11,6 +11,16 @@ const publicationData = [
     },
     {
         id: "011-pub",
+        year: "2026",
+        title: "The Effects of Virtual Social Touch on Interpersonal Communication Outcomes in Virtual Environments: A Meta-Analysis",
+        authors: "Ma, H. H., Lee, M., Kim, E., & Pang, S.",
+        venue: "International Journal of Human–Computer Interaction, 42(4), 2081–2097",
+        link: "https://doi.org/10.1080/10447318.2025.2526590",
+        tags: ["MS", "VR", "BAYES"],
+        award: null
+    },
+    {
+        id: "010-pub",
         year: "2025",
         title: "Effects of Cognitive Distortions, Lottery-Related Social Relationships, and Media Campaign Exposure on Excessive Lottery Behavior: Implications for Responsible Lottery Campaign Strategies",
         authors: "Paek, H.-J., & Ma, H. H.*",
@@ -20,7 +30,7 @@ const publicationData = [
         award: null
     },
     {
-        id: "010-pub",
+        id: "009-pub",
         year: "2025",
         title: "Replicability of Communication Research in Korea: Evidence of Publication Bias and p-Hacking",
         authors: "Lee, B., Ma, H. H.*, Kim, E., Pang, S., & Kim, T.",
@@ -28,16 +38,6 @@ const publicationData = [
         link: "https://doi.org/10.20879/kjjcs.2025.69.4.002",
         tags: ["MS"],
         award: "Best Paper Award of the Year - 2025 KSJCS"
-    },
-    {
-        id: "009-pub",
-        year: "2025",
-        title: "The Effects of Virtual Social Touch on Interpersonal Communication Outcomes in Virtual Environments: A Meta-Analysis",
-        authors: "Ma, H. H., Lee, M., Kim, E., & Pang, S.",
-        venue: "International Journal of Human–Computer Interaction, 42(4), 2081–2097",
-        link: "https://doi.org/10.1080/10447318.2025.2526590",
-        tags: ["MS", "VR", "BAYES"],
-        award: null
     },
     {
         id: "008-pub",
