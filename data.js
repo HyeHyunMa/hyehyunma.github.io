@@ -7,7 +7,7 @@ const publicationData = [
         venue: "Health Communication, 41(9), 1507–1518.",
         link: "https://doi.org/10.1080/10410236.2025.2573778",
         tags: ["PCC"],
-        award: "Best Paper Award - 2025 KHCA"
+        award: null
     },
     {
         id: "011-pub",
@@ -47,7 +47,7 @@ const publicationData = [
         venue: "Health Communication Research, 24(2), 121-144.",
         link: "https://doi.org/10.24172/hcr.2025.24.2.121",
         tags: ["PCC", "VR", "CI"],
-        award: null
+        award: "Best Paper Award - 2025 KHCA"
     },
     {
         id: "007-pub",
