@@ -4,9 +4,9 @@ const publicationData = [
         year: "2025",
         title: "The Role of Risk Perception and Information-Seeking in Acceptance of Alternative Proteins",
         authors: "Choi, M. Y., Ma, H. H., & Oh, H. J.",
-        venue: "Health Communication.",
+        venue: "Health Communication, 41(9), 1507–1518.",
         link: "https://doi.org/10.1080/10410236.2025.2573778",
-        tags: ["COMM"],
+        tags: ["PCC"],
         award: "Best Paper Award - 2025 KHCA"
     },
     {
@@ -16,7 +16,7 @@ const publicationData = [
         authors: "Paek, H.-J., & Ma, H. H.*",
         venue: "Journal of Public Relations, 29(4), 1-30.",
         link: "https://doi.org/10.15814/jpr.2025.29.4.1",
-        tags: ["COMM"],
+        tags: ["PCC"],
         award: null
     },
     {
@@ -34,7 +34,7 @@ const publicationData = [
         year: "2025",
         title: "The Effects of Virtual Social Touch on Interpersonal Communication Outcomes in Virtual Environments: A Meta-Analysis",
         authors: "Ma, H. H., Lee, M., Kim, E., & Pang, S.",
-        venue: "International Journal of Human–Computer Interaction, 1–17.",
+        venue: "International Journal of Human–Computer Interaction, 42(4), 2081–2097",
         link: "https://doi.org/10.1080/10447318.2025.2526590",
         tags: ["MS", "VR", "BAYES"],
         award: null
@@ -46,7 +46,7 @@ const publicationData = [
         authors: "Ma, H. H., Choi, M. Y., & Paek, H.-J.",
         venue: "Health Communication Research, 24(2), 121-144.",
         link: "https://doi.org/10.24172/hcr.2025.24.2.121",
-        tags: ["COMM", "VR", "CI"],
+        tags: ["PCC", "VR", "CI"],
         award: null
     },
     {
@@ -56,7 +56,7 @@ const publicationData = [
         authors: "Hove, T., Ma, H. H., & Paek, H. J.",
         venue: "Journal of Digital Contents Society, 26(3), 635-644.",
         link: "http://dx.doi.org/10.9728/dcs.2025.26.3.635",
-        tags: ["COMM"],
+        tags: ["PCC"],
         award: null
     },
     {
@@ -76,7 +76,7 @@ const publicationData = [
         authors: "Lee, C. E., Ma, H. H., & Paek, H.-J.",
         venue: "Korean Journal of Journalism & Communication Studies, 68(5), 196-232.",
         link: "https://doi.org/10.20879/kjjcs.2024.68.5.006",
-        tags: ["COMM"],
+        tags: ["PCC"],
         award: null
     },
     {
@@ -86,7 +86,7 @@ const publicationData = [
         authors: "Oh, H. J., Lee, B., Ma, H. H., Jang, D., & Park, S.",
         venue: "Public Relations Review, 50(1), 102398.",
         link: "https://doi.org/10.1016/j.pubrev.2023.102398",
-        tags: ["COMM"],
+        tags: ["PCC"],
         award: "Top Paper Award - 2023 ICA"
     },
     {
@@ -106,7 +106,7 @@ const publicationData = [
         authors: "Ma, H. H., & Lee, B.",
         venue: "The Korean Journal of Advertising, 33(8), 7-30.",
         link: "https://doi.org/10.14377/KJA.2022.11.30.7",
-        tags: ["COMM", "BAYES", "CI"],
+        tags: ["PCC", "BAYES", "CI"],
         award: null
     },
     {
@@ -134,7 +134,7 @@ const presentationData = [
         image: "assets/presentations/images/016-image.png",
         pptLink: "assets/presentations/slides/016-slides.pdf",
         sessionPdf: "assets/presentations/sessions/016-session.jpg",
-        tags: ["CI", "COMM", "ML"]
+        tags: ["CI", "PCC", "ML"]
     },
     {
         id: "015",
@@ -147,7 +147,7 @@ const presentationData = [
         image: "assets/presentations/images/015-image.png",
         pptLink: "assets/presentations/slides/015-slides.pdf",
         sessionPdf: "assets/presentations/sessions/015-session.pdf",
-        tags: ["MS", "COMM"]
+        tags: ["MS", "PCC"]
     },
     {
         id: "014",
@@ -174,7 +174,7 @@ const presentationData = [
         image: "assets/presentations/images/013-image.png",
         pptLink: "assets/presentations/slides/013-slides.pdf",
         sessionPdf: "assets/presentations/sessions/013-session.pdf",
-        tags: ["COMM"]
+        tags: ["PCC"]
     },
     {
         id: "012",
@@ -200,7 +200,7 @@ const presentationData = [
         image: "assets/presentations/images/011-image.jpeg",
         pptLink: "assets/presentations/slides/011-slides.pdf",
         sessionPdf: "assets/presentations/sessions/011-session.pdf",
-        tags: ["COMM", "ML"]
+        tags: ["PCC", "ML"]
     },
     {
         id: "010",
@@ -213,7 +213,7 @@ const presentationData = [
         image: "assets/presentations/images/010-image.jpeg",
         pptLink: "assets/presentations/slides/010-slides.pdf",
         sessionPdf: "assets/presentations/sessions/010-session.pdf",
-        tags: ["COMM"]
+        tags: ["PCC"]
     },
     {
         id: "009",
@@ -226,7 +226,7 @@ const presentationData = [
         image: "assets/presentations/images/009-image.png",
         pptLink: "assets/presentations/slides/009-slides.pdf",
         sessionPdf: "assets/presentations/sessions/009-session.pdf",
-        tags: ["VR", "CI", "COMM"],
+        tags: ["VR", "CI", "PCC"],
         award: "Best Paper Award, Enzaim / Korea Health Communication Association"
     },
     {
@@ -293,7 +293,7 @@ const presentationData = [
         image: "assets/presentations/images/004-image.png",
         pptLink: "assets/presentations/slides/004-slides.pdf",
         sessionPdf: "assets/presentations/sessions/004-session.jpg",
-        tags: ["CI", "BAYES", "COMM"]
+        tags: ["CI", "BAYES", "PCC"]
     },
     {
         id: "003",
@@ -306,7 +306,7 @@ const presentationData = [
         image: "assets/presentations/images/003-image.png",
         pptLink: "assets/presentations/slides/003-slides.pdf",
         sessionPdf: "assets/presentations/sessions/003-session.jpg",
-        tags: ["CI", "COMM"]
+        tags: ["CI", "PCC"]
     },
     {
         id: "002",
