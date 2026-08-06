@@ -15,13 +15,11 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         
-        /* 라이트 모드 기본 배경 */
         .bg-gradient-header { background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%); }
         html { scroll-behavior: smooth; }
         .modal-backdrop { background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(4px); }
         .citation-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; }
 
-        /* 다크 모드 커스텀 스타일 (어두운 회색/검은색 계열) */
         .dark body {
             background-color: #0f172a; /* Slate 900 */
             color: #e2e8f0;            /* Slate 200 */
@@ -67,7 +65,7 @@
             background-color: #1e293b !important;
         }
     </style>
-    <!-- 새로고침 시 깜빡임 방지 스크립트 -->
+
     <script>
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
@@ -76,6 +74,8 @@
         }
     </script>
 </head>
+
+    
 <body class="bg-white text-slate-800 leading-relaxed transition-colors duration-300">
 
     <!-- Navigation -->
@@ -91,7 +91,7 @@
                     <a href="presentations.html" class="text-slate-500 hover:text-blue-600 transition">Presentations</a>
                 </div>
 
-                <!-- Theme Toggle Button (다크모드 토글 버튼) -->
+                <!-- Theme Toggle Button -->
                 <button id="theme-toggle" class="p-2 rounded-full text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none transition">
                     <i id="theme-toggle-dark-icon" class="fa-solid fa-moon text-lg hidden"></i>
                     <i id="theme-toggle-light-icon" class="fa-solid fa-sun text-lg text-amber-400 hidden"></i>
@@ -296,7 +296,7 @@
                             The Influences of Nonverbal Communication Cues of Avatars on Self-Disclosure in Immersive Social VR: Focusing on Inter-Avatar Distance and Physical Attractiveness of the Interlocutor’s Avatar.
                         </h3>
                     </a>
-                    <p class="text-slate-500 text-sm mt-2 leading-relaxed italic">Hye Hyun Ma, Seo Yeon Keum, Shuyu Pang, JunHyeok Oh, Jin Lee & Byoungkwan Lee. (2023). Korean Journal of Journalism & Communication Studies, 67(4), 47-88.</p>
+                    <p class="text-slate-500 text-sm mt-2 leading-relaxed italic">Ma, H. H., Keum, S. Y., Pang, S., Oh, J., Lee, J., & Lee, B. (2023). Korean Journal of Journalism & Communication Studies, 67(4), 47-88.</p>
                 </div>
             </div>
         </section>
