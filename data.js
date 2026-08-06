@@ -219,7 +219,7 @@ const presentationData = [
         id: "009",
         emoji: "👾",
         title: "Exploring the Effectiveness of Health Campaigns Using Metaverse: A Case Study of the ‘ZEPETO Dr. Jekyll's World’ Food Poisoning Prevention Campaign [메타버스를 이용한 건강 캠페인의 효과 평가 탐색: 식중독 예방 캠페인 ‘제페토 지킬박사월드’ 사례를 중심으로]",
-        authors: "Ma, H. H., Choi, M. Y., Oh, J. H., & Paek, H.-J.",
+        authors: "Ma, H. H., Choi, M. Y., Oh, J., & Paek, H.-J.",
         date: "2023. 6. 16.",
         conference: "Korea Health Communication Association (KHCA)",
         location: "Seoul, Korea",
