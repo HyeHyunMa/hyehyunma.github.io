@@ -86,7 +86,7 @@ const publicationData = [
         authors: "Oh, H. J., Lee, B., Ma, H. H., Jang, D., & Park, S.",
         venue: "Public Relations Review, 50(1), 102398.",
         link: "https://doi.org/10.1016/j.pubrev.2023.102398",
-        tags: ["PCC"],
+        tags: ["PCC", "ML"],
         award: "Top Paper Award - 2023 ICA"
     },
     {
@@ -240,7 +240,7 @@ const presentationData = [
         image: "assets/presentations/images/008-image.png",
         pptLink: "assets/presentations/slides/008-slides.pdf",
         sessionPdf: "assets/presentations/sessions/008-session.pdf",
-        tags: [],
+        tags: ["PCC","ML"],
         award: "Top Paper Award, International Communication Association (ICA), Korean American Communication Association (KACA) Research Session"
     },
     {
