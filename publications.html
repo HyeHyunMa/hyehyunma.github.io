@@ -305,7 +305,8 @@
                                         </span>
                                     ` : ''}
                                 </div>
-        
+                                
+                                <!--
                                 <h3 class="text-base font-bold text-slate-900 dark:text-slate-100 leading-snug">
                                     <a href="${item.link || '#'}"
                                        target="_blank"
@@ -314,6 +315,18 @@
                                         <span>${item.title}</span>
                                         <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 mt-1"></i>
                                     </a>
+                                </h3> 
+                                -->
+
+                                <h3 class="text-base font-bold text-slate-900 dark:text-slate-100 leading-snug">
+                                    ${item.link
+                                        ? `<a href="${item.link}" target="_blank" rel="noopener noreferrer"
+                                             class="hover:text-blue-600 dark:hover:text-blue-400 transition inline-flex items-start gap-1">
+                                             <span>${item.title}</span>
+                                             <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 mt-1"></i>
+                                           </a>`
+                                        : `<span>${item.title}</span>`
+                                    }
                                 </h3>
         
                                 <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
