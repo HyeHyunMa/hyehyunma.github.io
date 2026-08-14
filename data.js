@@ -5,7 +5,6 @@ const publicationData = [
         title: "Preventing Excessive Lottery Behaviors by Correcting Cognitive Distortions: An Online Message Experiment Study",
         authors: "Paek, H.-J., Ma, H. H., & Hove, T.",
         venue: "The Social Science Journal (In press)",
-        link: null,
         tags: ["PCC"],
         award: null
     },
