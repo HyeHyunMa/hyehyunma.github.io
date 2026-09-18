@@ -1,5 +1,16 @@
 const publicationData = [
      {
+        id: "014-pub",
+        year: "2026",
+        title: "Causal Inference of Public Communication Campaign Effects Using Machine Learning: Applying Causal Forests to Estimate Heterogeneous Treatment Effects",
+        authors: "Lee, B., Kim, E., Ma, H. H., & Keum, S.",
+        venue: "In press.",
+        link: null,
+        tags: ["CI","ML","PCC"],
+        index: "KCI",
+        award: null
+     },
+     {
         id: "013-pub",
         year: "2026",
         title: "Preventing Excessive Lottery Behaviors by Correcting Cognitive Distortions: An Online Message Experiment Study",
