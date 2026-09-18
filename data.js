@@ -58,7 +58,7 @@ const publicationData = [
         authors: "Lee, B., Ma, H. H.*, Kim, E., Pang, S., & Kim, T.",
         venue: "Korean Journal of Journalism & Communication Studies, 69(4), 36-71.",
         link: "https://doi.org/10.20879/kjjcs.2025.69.4.002",
-        tags: ["MS"],
+        tags: ["MS"], index: ["KCI"],
         award: "Best Paper Award of the Year - 2025 KSJCS"
     },
     {
@@ -68,7 +68,7 @@ const publicationData = [
         authors: "Ma, H. H., Choi, M. Y., & Paek, H.-J.",
         venue: "Health Communication Research, 24(2), 121-144.",
         link: "https://doi.org/10.24172/hcr.2025.24.2.121",
-        tags: ["PCC", "VR", "CI"],
+        tags: ["PCC", "VR", "CI"], index: ["KCI"],
         award: "Best Paper Award - 2025 KHCA"
     },
     {
@@ -78,7 +78,7 @@ const publicationData = [
         authors: "Hove, T., Ma, H. H., & Paek, H.-J.",
         venue: "Journal of Digital Contents Society, 26(3), 635-644.",
         link: "http://dx.doi.org/10.9728/dcs.2025.26.3.635",
-        tags: ["PCC"],
+        tags: ["PCC"], index: ["KCI"],
         award: null
     },
     {
@@ -88,7 +88,7 @@ const publicationData = [
         authors: "Jeon, M., Ma, H. H., Lee, M., & Shim, S.",
         venue: "The Korean Advertising & PR Practitioners Society, 17(4), 129-159.",
         link: "https://doi.org/10.21331/jprapr.2024.17.4.005",
-        tags: [],
+        tags: [], index: ["KCI"],
         award: null
     },
     {
@@ -98,7 +98,7 @@ const publicationData = [
         authors: "Lee, C. E., Ma, H. H., & Paek, H.-J.",
         venue: "Korean Journal of Journalism & Communication Studies, 68(5), 196-232.",
         link: "https://doi.org/10.20879/kjjcs.2024.68.5.006",
-        tags: ["PCC"],
+        tags: ["PCC"], index: ["KCI"],
         award: null
     },
     {
@@ -108,7 +108,7 @@ const publicationData = [
         authors: "Oh, H. J., Lee, B., Ma, H. H., Jang, D., & Park, S.",
         venue: "Public Relations Review, 50(1), 102398.",
         link: "https://doi.org/10.1016/j.pubrev.2023.102398",
-        tags: ["PCC", "ML"],
+        tags: ["PCC", "ML"], index: ["SSCI"],
         award: "Top Paper Award - 2023 ICA"
     },
     {
@@ -118,7 +118,7 @@ const publicationData = [
         authors: "Ma, H. H., Keum, S. Y., Pang, S., Oh, J., Lee, J., & Lee, B.",
         venue: "Korean Journal of Journalism & Communication Studies, 67(4), 47-88.",
         link: "https://doi.org/10.20879/kjjcs.2023.67.4.002",
-        tags: ["VR", "BAYES"],
+        tags: ["VR", "BAYES"], index: ["KCI"],
         award: null
     },
     {
@@ -128,7 +128,7 @@ const publicationData = [
         authors: "Ma, H. H., & Lee, B.",
         venue: "The Korean Journal of Advertising, 33(8), 7-30.",
         link: "https://doi.org/10.14377/KJA.2022.11.30.7",
-        tags: ["PCC", "BAYES", "CI", "ML"],
+        tags: ["PCC", "BAYES", "CI", "ML"], index: ["KCI"],
         award: null
     },
     {
@@ -138,7 +138,7 @@ const publicationData = [
         authors: "Ma, H. H., & Shim, S.",
         venue: "Review of Culture and Economy, 22(3), 117-152.",
         link: "https://doi.org/10.36234/kace.2019.22.3.117",
-        tags: [],
+        tags: [], index: ["KCI"],
         award: null
     }
 ];
