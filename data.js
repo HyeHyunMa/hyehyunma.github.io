@@ -7,7 +7,7 @@ const publicationData = [
         venue: "In press.",
         link: null,
         tags: ["CI","ML","PCC"],
-        index: "KCI",
+        index: ["KCI"],
         award: null
      },
      {
@@ -18,6 +18,7 @@ const publicationData = [
         venue: "The Social Science Journal. Online first.",
         link: "https://doi.org/10.1080/03623319.2026.2721309",
         tags: ["PCC"],
+        index: ["SSCI"],
         award: null
     },
     {
@@ -27,7 +28,7 @@ const publicationData = [
         authors: "Choi, M. Y., Ma, H. H., & Oh, H. J.",
         venue: "Health Communication, 41(9), 1507–1518.",
         link: "https://doi.org/10.1080/10410236.2025.2573778",
-        tags: ["PCC"],
+        tags: ["PCC"], index: ["SSCI"],
         award: null
     },
     {
@@ -37,7 +38,7 @@ const publicationData = [
         authors: "Ma, H. H., Lee, M., Kim, E., & Pang, S.",
         venue: "International Journal of Human–Computer Interaction, 42(4), 2081–2097",
         link: "https://doi.org/10.1080/10447318.2025.2526590",
-        tags: ["MS", "VR", "BAYES"],
+        tags: ["MS", "VR", "BAYES"], index: ["SSCI"],
         award: null
     },
     {
@@ -47,7 +48,7 @@ const publicationData = [
         authors: "Paek, H.-J., & Ma, H. H.*",
         venue: "Journal of Public Relations, 29(4), 1-30.",
         link: "https://doi.org/10.15814/jpr.2025.29.4.1",
-        tags: ["PCC"],
+        tags: ["PCC"], index: ["KCI"],
         award: null
     },
     {
