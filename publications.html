@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Hye Hyun Ma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+
+        .dark body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        .dark nav {
+            background-color: rgba(15, 23, 42, 0.9) !important;
+            border-color: #1e293b !important;
+        }
+        .dark #mobile-menu {
+            background-color: #0f172a !important;
+            border-color: #1e293b !important;
+        }
+        .dark footer, 
+        .dark .border-slate-100, 
+        .dark .border-slate-200 {
+            border-color: #1e293b !important;
+        }
+        .dark .text-slate-900 { color: #f8fafc !important; }
+        .dark .text-slate-700 { color: #cbd5e1 !important; }
+        .dark .text-slate-600 { color: #94a3b8 !important; }
+        .dark .text-slate-500 { color: #64748b !important; }
+        .dark .text-slate-400 { color: #94a3b8 !important; }
+    </style>
+
+    <script>
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+<body class="bg-white text-slate-800 leading-relaxed transition-colors duration-300">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">    
+            <a href="index.html" class="text-lg font-bold tracking-tight text-slate-900">HYE HYUN MA</a>
+            
+            <div class="flex items-center space-x-6">
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="index.html#home" class="text-slate-500 hover:text-blue-600 transition">home</a>
+                    <a href="publications.html" class="text-blue-600 font-semibold transition">publications</a>
+                    <a href="presentations.html" class="text-slate-500 hover:text-blue-600 transition">talks</a>
+                </div>
+
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="p-2 rounded-full text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none transition">
+                    <i id="theme-toggle-dark-icon" class="fa-solid fa-moon text-lg hidden"></i>
+                    <i id="theme-toggle-light-icon" class="fa-solid fa-sun text-lg text-amber-400 hidden"></i>
+                </button>
+
+                <!-- Mobile Menu Icon -->
+                <button id="menu-btn" class="md:hidden text-slate-500 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu List -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-6 py-4 space-y-4 shadow-lg">
+            <a href="index.html#home" class="block text-sm font-medium text-slate-600 hover:text-blue-600">home</a>
+            <a href="publications.html" class="block text-sm font-medium text-blue-600 font-semibold">publications</a>
+            <a href="presentations.html" class="block text-sm font-medium text-slate-600 hover:text-blue-600">talks</a>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-20">
+        <header class="mb-8">
+            <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Publications</h1>
+            <p class="text-slate-500 text-sm">
+                Citation metrics and additional research information are available on
+                <a href="https://scholar.google.com/citations?user=4ROFv34AAAAJ" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">Google Scholar</a>
+                or
+                <a href="https://www.researchgate.net/profile/Hyehyun-Ma" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 font-semibold hover:underline">ResearchGate</a>.
+            </p>
+        </header>
+
+        <div class="mb-8 pb-8 border-b border-slate-200">
+            <p class="mb-4 text-sm text-slate-600">My research centers on:</p>
+
+            <ul class="space-y-3 text-sm text-slate-700 font-normal">
+                <li class="flex items-baseline flex-wrap gap-x-2 gap-y-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400 self-center"></span>
+                    <strong class="text-slate-900 font-bold">Causal Inference</strong> 
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 border border-rose-300 dark:border-rose-800">CI</span>
+                    <span class="text-slate-500">: Estimating causal and heterogeneous effects in communication campaigns.</span>
+                </li>
+                <li class="flex items-baseline flex-wrap gap-x-2 gap-y-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400 self-center"></span>
+                    <strong class="text-slate-900 font-bold">Computational Methods</strong> 
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 border border-amber-300 dark:border-amber-800">ML</span>
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-fuchsia-100 dark:bg-fuchsia-950/60 text-fuchsia-600 dark:text-fuchsia-400 border border-fuchsia-300 dark:border-fuchsia-800">AI</span>
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-indigo-100 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-300 dark:border-indigo-800">BAYES</span>
+                    <span class="text-slate-500">: Applying machine learning, Bayesian modeling, and LLM-based methods.</span>
+                </li>
+                <li class="flex items-baseline flex-wrap gap-x-2 gap-y-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400 self-center"></span>
+                    <strong class="text-slate-900 font-bold">Meta-Science</strong> 
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 border border-emerald-300 dark:border-emerald-800">MS</span>
+                    <span class="text-slate-500">: Evaluating replicability, statistical power, and reporting practices.</span>
+                </li>
+                <li class="flex items-baseline flex-wrap gap-x-2 gap-y-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400 self-center"></span>
+                    <strong class="text-slate-900 font-bold">Public Communication Campaigns</strong> 
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-sky-100 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 border border-sky-300 dark:border-sky-800">PCC</span>
+                    <span class="text-slate-500">: Designing and evaluating health, risk, and public-interest communications.</span>
+                </li>
+                <li class="flex items-baseline flex-wrap gap-x-2 gap-y-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-slate-400 self-center"></span>
+                    <strong class="text-slate-900 font-bold">Virtual Environments & Social Interaction</strong> 
+                    <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-purple-100 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 border border-purple-300 dark:border-purple-800">VR</span>
+                    <span class="text-slate-500">: Investigating user experience and social interactions in virtual settings.</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-12">
+            <div id="tag-container" class="flex flex-wrap gap-2"></div> 
+            <p class="text-xs text-slate-400 italic sm:text-right whitespace-nowrap self-end sm:self-center">* indicates corresponding author.</p>
+        </div>
+
+        <div id="publications-container" class="space-y-12"></div>
+    </main>
+
+    <footer class="max-w-4xl mx-auto px-6 py-16 border-t border-slate-100 text-center">
+        <div class="flex justify-center space-x-8 mb-6 text-slate-400">
+            <a href="mailto:gogus8281@hanyang.ac.kr" class="hover:text-slate-900 dark:hover:text-white transition text-xl"><i class="fa-solid fa-envelope"></i></a>
+            <!--
+            <a href="https://www.linkedin.com/in/hyehyunma" target="_blank" class="hover:text-slate-900 dark:hover:text-white transition text-xl"><i class="fa-brands fa-linkedin-in"></i></a>
+            -->
+            <a href="https://www.researchgate.net/profile/Hyehyun-Ma" target="_blank" class="hover:text-slate-900 dark:hover:text-white transition text-xl"><i class="fa-brands fa-researchgate"></i></a>
+            <a href="https://scholar.google.com/citations?user=4ROFv34AAAAJ" target="_blank" class="hover:text-slate-900 dark:hover:text-white transition text-xl"><i class="fa-solid fa-graduation-cap"></i></a>
+        </div>
+        <p class="text-xs font-medium text-slate-400 tracking-wider">&copy; 2025 HYEHYUN MA. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        const menuLinks = menu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Dark / Light Theme Toggle Script
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+        const themeToggleBtn = document.getElementById('theme-toggle');
+
+        function updateIcons() {
+            if (document.documentElement.classList.contains('dark')) {
+                lightIcon.classList.remove('hidden');
+                darkIcon.classList.add('hidden');
+            } else {
+                darkIcon.classList.remove('hidden');
+                lightIcon.classList.add('hidden');
+            }
+        }
+
+        updateIcons();
+
+        themeToggleBtn.addEventListener('click', function() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+            updateIcons();
+        });
+
+        // Publication Data Logic
+        let currentTag = 'All';
+        let currentIndex = null;
+
+        const tagOrder = ['AI', 'CI', 'PCC', 'ML', 'MS', 'BAYES', 'VR'];
+        const indexOrder = ['SSCI', 'KCI'];
+
+        const tagColors = {
+            AI: 'bg-fuchsia-100 dark:bg-fuchsia-950/60 text-fuchsia-600 dark:text-fuchsia-400 border-fuchsia-300 dark:border-fuchsia-800',
+            CI: 'bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 border-rose-300 dark:border-rose-800',
+            PCC: 'bg-sky-100 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 border-sky-300 dark:border-sky-800',
+            ML: 'bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 border-amber-300 dark:border-amber-800',
+            MS: 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 border-emerald-300 dark:border-emerald-800',
+            BAYES: 'bg-indigo-100 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border-indigo-300 dark:border-indigo-800',
+            VR: 'bg-purple-100 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 border-purple-300 dark:border-purple-800'
+        };
+
+        function highlightAuthors(authors = '') {
+            return authors
+                .replace(/Hye Hyun Ma/g, '<strong class="text-slate-900 dark:text-slate-100 font-bold">Hye Hyun Ma</strong>')
+                .replace(/Ma, H\. H\./g, '<strong class="text-slate-900 dark:text-slate-100 font-bold">Ma, H. H.</strong>');
+        }
+
+        function renderBadges(tags = []) {
+            return tags.map(tag => {
+                const color = tagColors[tag] || 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border-slate-300 dark:border-slate-700';
+                return `<span class="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold border ${color}">${tag}</span>`;
+            }).join('');
+        }
+
+        function getFilteredData() {
+            if (!Array.isArray(publicationData)) return [];
+
+            return publicationData.filter(item => {
+                const matchesTopic =
+                    currentTag === 'All' ||
+                    (Array.isArray(item.tags) && item.tags.includes(currentTag));
+
+                const matchesIndex =
+                    currentIndex === null ||
+                    item.index === currentIndex;
+
+                return matchesTopic && matchesIndex;
+            });
+        }
+
+        function renderTags() {
+            const tagContainer = document.getElementById('tag-container');
+            if (typeof publicationData === 'undefined') return;
+
+            const usedTags = new Set(
+                publicationData.flatMap(item => Array.isArray(item.tags) ? item.tags : [])
+            );
+            const topicTags = tagOrder;
+
+            const buttonMarkup = (label, active, kind) => `
+                <button type="button" data-filter="${label}" data-kind="${kind}"
+                    class="filter-btn px-4 py-1.5 rounded-full text-xs font-extrabold transition border ${
+                        active
+                            ? 'bg-slate-900 dark:bg-blue-600 text-white border-slate-900 dark:border-blue-600'
+                            : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-slate-400'
+                    }">
+                    ${label}
+                </button>
+            `;
+
+            const divider = `
+                <span aria-hidden="true" class="w-px h-8 bg-slate-200 dark:bg-slate-700 mx-1 self-center"></span>
+            `;
+
+            tagContainer.innerHTML = `
+                ${buttonMarkup('All', currentTag === 'All' && currentIndex === null, 'all')}
+                ${divider}
+                ${topicTags.map(tag => buttonMarkup(tag, currentTag === tag, 'topic')).join('')}
+                ${divider}
+                ${indexOrder.map(index => buttonMarkup(index, currentIndex === index, 'index')).join('')}
+            `;
+
+            tagContainer.querySelectorAll('.filter-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const value = button.dataset.filter;
+                    const kind = button.dataset.kind;
+
+                    if (kind === 'all') {
+                        currentTag = 'All';
+                        currentIndex = null;
+                    } else if (kind === 'topic') {
+                        currentTag = value;
+                    } else if (kind === 'index') {
+                        currentIndex = currentIndex === value ? null : value;
+                    }
+
+                    renderTags();
+                    renderPublications();
+                });
+            });
+        }
+
+        function renderPublications() {
+            const container = document.getElementById('publications-container');
+            if (typeof publicationData === 'undefined') return;
+            const filteredData = getFilteredData()
+                .sort((a, b) => Number(b.year) - Number(a.year));
+        
+            if (filteredData.length === 0) {
+                container.innerHTML =
+                    '<p class="text-sm text-slate-500">No publications match this filter.</p>';
+                return;
+            }
+        
+            const grouped = filteredData.reduce((acc, item) => {
+                const year = item.year || 'Undated';
+        
+                if (!acc[year]) {
+                    acc[year] = [];
+                }
+        
+                acc[year].push(item);
+                return acc;
+            }, {});
+        
+            const years = Object.keys(grouped)
+                .sort((a, b) => Number(b) - Number(a));
+        
+            container.innerHTML = years.map(year => `
+                <section class="space-y-6">
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-100 border-b border-slate-200 dark:border-slate-800 pb-2">
+                        ${year}
+                    </h2>
+        
+                    <div class="space-y-7">
+                        ${grouped[year].map(item => `
+                            <article class="space-y-1.5">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    ${item.type ? `
+                                        <span class="text-[10px] font-bold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 px-2 py-0.5 rounded tracking-wider uppercase">
+                                            ${item.type}
+                                        </span>
+                                    ` : ''}
+        
+                                    ${renderBadges(item.tags)}
+        
+                                    ${item.award ? `
+                                        <span class="text-[10px] font-bold text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800 px-2 py-0.5 rounded flex items-center gap-1">
+                                            🏆 ${item.award}
+                                        </span>
+                                    ` : ''}
+                                </div>
+                                
+                                <!--
+                                <h3 class="text-base font-bold text-slate-900 dark:text-slate-100 leading-snug">
+                                    <a href="${item.link || '#'}"
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       class="hover:text-blue-600 dark:hover:text-blue-400 transition inline-flex items-start gap-1">
+                                        <span>${item.title}</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 mt-1"></i>
+                                    </a>
+                                </h3> 
+                                -->
+
+                                <h3 class="text-base font-bold text-slate-900 dark:text-slate-100 leading-snug">
+                                    ${item.link
+                                        ? `<a href="${item.link}" target="_blank" rel="noopener noreferrer"
+                                             class="hover:text-blue-600 dark:hover:text-blue-400 transition inline-flex items-start gap-1">
+                                             <span>${item.title}</span>
+                                             <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 mt-1"></i>
+                                           </a>`
+                                        : `<span>${item.title}</span>`
+                                    }
+                                </h3>
+        
+                                <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    ${highlightAuthors(item.authors)}
+                                </p>
+        
+                                <p class="text-xs text-slate-500 italic">
+                                    ${item.venue || ''}
+                                </p>
+                            </article>
+                        `).join('')}
+                    </div>
+                </section>
+            `).join('');
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            renderTags();
+            renderPublications();
+        });
+    </script>
+</body>
+</html>
