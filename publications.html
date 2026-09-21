@@ -205,7 +205,7 @@
         let currentTag = 'All';
         let currentIndex = null;
 
-        const tagOrder = ['AI', 'CI', 'PCC', 'ML', 'MS', 'BAYES', 'VR'];
+        const tagOrder = ['CI', 'ML', 'BAYES', 'MS', 'PCC', 'VR'];
         //const indexOrder = ['SSCI', 'KCI'];
 
         const tagColors = {
@@ -275,8 +275,7 @@
                 ${buttonMarkup('All', currentTag === 'All' && currentIndex === null, 'all')}
                 ${divider}
                 ${topicTags.map(tag => buttonMarkup(tag, currentTag === tag, 'topic')).join('')}
-                ${divider}
-                ${indexOrder.map(index => buttonMarkup(index, currentIndex === index, 'index')).join('')}
+                
             `;
 
             tagContainer.querySelectorAll('.filter-btn').forEach(button => {
