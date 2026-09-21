@@ -7,7 +7,6 @@ const publicationData = [
         venue: "In press.",
         link: null,
         tags: ["CI","ML","PCC"],
-        index: "KCI",
         award: null
      },
      {
@@ -18,7 +17,6 @@ const publicationData = [
         venue: "The Social Science Journal. Online first.",
         link: "https://doi.org/10.1080/03623319.2026.2721309",
         tags: ["PCC"],
-        index: "SSCI",
         award: null
     },
     {
@@ -29,7 +27,6 @@ const publicationData = [
         venue: "Health Communication, 41(9), 1507–1518.",
         link: "https://doi.org/10.1080/10410236.2025.2573778",
         tags: ["PCC"], 
-        index: "SSCI",
         award: null
     },
     {
@@ -40,7 +37,6 @@ const publicationData = [
         venue: "International Journal of Human–Computer Interaction, 42(4), 2081–2097",
         link: "https://doi.org/10.1080/10447318.2025.2526590",
         tags: ["MS", "VR", "BAYES"],
-        index: "SSCI",
         award: null
     },
     {
@@ -51,7 +47,6 @@ const publicationData = [
         venue: "Journal of Public Relations, 29(4), 1-30.",
         link: "https://doi.org/10.15814/jpr.2025.29.4.1",
         tags: ["PCC"],
-        index: "KCI",
         award: null
     },
     {
@@ -62,7 +57,6 @@ const publicationData = [
         venue: "Korean Journal of Journalism & Communication Studies, 69(4), 36-71.",
         link: "https://doi.org/10.20879/kjjcs.2025.69.4.002",
         tags: ["MS"], 
-        index: "KCI",
         award: "Best Paper Award of the Year - 2025 KSJCS"
     },
     {
@@ -73,7 +67,6 @@ const publicationData = [
         venue: "Health Communication Research, 24(2), 121-144.",
         link: "https://doi.org/10.24172/hcr.2025.24.2.121",
         tags: ["PCC", "VR", "CI"],
-        index: "KCI",
         award: "Best Paper Award - 2025 KHCA"
     },
     {
@@ -84,7 +77,6 @@ const publicationData = [
         venue: "Journal of Digital Contents Society, 26(3), 635-644.",
         link: "http://dx.doi.org/10.9728/dcs.2025.26.3.635",
         tags: ["PCC"],
-        index: "KCI",
         award: null
     },
     {
@@ -95,7 +87,6 @@ const publicationData = [
         venue: "The Korean Advertising & PR Practitioners Society, 17(4), 129-159.",
         link: "https://doi.org/10.21331/jprapr.2024.17.4.005",
         tags: [], 
-        index: "KCI",
         award: null
     },
     {
@@ -106,7 +97,6 @@ const publicationData = [
         venue: "Korean Journal of Journalism & Communication Studies, 68(5), 196-232.",
         link: "https://doi.org/10.20879/kjjcs.2024.68.5.006",
         tags: ["PCC"],
-        index: "KCI",
         award: null
     },
     {
@@ -117,7 +107,6 @@ const publicationData = [
         venue: "Public Relations Review, 50(1), 102398.",
         link: "https://doi.org/10.1016/j.pubrev.2023.102398",
         tags: ["PCC", "ML"],
-        index: "SSCI",
         award: "Top Paper Award - 2023 ICA"
     },
     {
@@ -128,7 +117,6 @@ const publicationData = [
         venue: "Korean Journal of Journalism & Communication Studies, 67(4), 47-88.",
         link: "https://doi.org/10.20879/kjjcs.2023.67.4.002",
         tags: ["VR", "BAYES"],
-        index: "KCI",
         award: null
     },
     {
@@ -139,7 +127,6 @@ const publicationData = [
         venue: "The Korean Journal of Advertising, 33(8), 7-30.",
         link: "https://doi.org/10.14377/KJA.2022.11.30.7",
         tags: ["PCC", "BAYES", "CI", "ML"], 
-        index: "KCI",
         award: null
     },
     {
@@ -150,7 +137,6 @@ const publicationData = [
         venue: "Review of Culture and Economy, 22(3), 117-152.",
         link: "https://doi.org/10.36234/kace.2019.22.3.117",
         tags: [], 
-        index: "KCI",
         award: null
     }
 ];
