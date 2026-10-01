@@ -4,8 +4,8 @@ const publicationData = [
         year: "2026",
         title: "Causal Inference of Public Communication Campaign Effects Using Machine Learning: Applying Causal Forests to Estimate Heterogeneous Treatment Effects",
         authors: "Lee, B., Kim, E., Ma, H. H., & Keum, S.",
-        venue: "In press.",
-        link: null,
+        venue: "Journal of Public Relations, 30(3), 89-117.",
+        link: "https://doi.org/10.15814/jpr.2026.30.3.89",
         tags: ["CI","ML","PCC"],
         award: null
      },
