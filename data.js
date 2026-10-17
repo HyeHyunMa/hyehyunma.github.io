@@ -143,6 +143,19 @@ const publicationData = [
 
 
 const presentationData = [
+     {
+        id: "017",
+        emoji: "🌴",
+        title: "Statistical Power in the Communication Literature in Korea: An Empirical Meta-Scientific Assessment of ANOVA",
+        authors: "Ma, H. H. & Lee, B.",
+        date: "2026. 10. 17.",
+        conference: "Korean Society For Journalism And Communication Studies (KSJCS)",
+        location: "Suwon, Korea",
+        image: "assets/presentations/images/017-image.png",
+        pptLink: "assets/presentations/slides/017-slides.pdf",
+        sessionPdf: "assets/presentations/sessions/017-session.jpg",
+        tags: ["MS", "ML"]
+    },
     {
         id: "016",
         emoji: "🌴",
