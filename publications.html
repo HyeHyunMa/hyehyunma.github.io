@@ -361,15 +361,14 @@
                                 <!-- Publication title links to DOI; optional PDF links to local file -->
                                 <h3 class="text-base font-bold text-slate-900 dark:text-slate-100 leading-snug">
                                     ${item.link
-                                        ? `<a href="${item.link}" target="_blank" rel="noopener noreferrer"
-                                              class="hover:text-blue-600 dark:hover:text-blue-400 transition">${item.title}</a>`
-                                        : `<span>${item.title}</span>`
+                                        ? `<a href="${item.link}"
+                                              target="_blank"
+                                              rel="noopener noreferrer"
+                                              class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                                              ${item.title}
+                                           </a>`
+                                        : item.title
                                     }
-                                    ${item.pdf ? `
-                                        <a href="${item.pdf}" target="_blank" rel="noopener noreferrer"
-                                           aria-label="Open PDF for ${item.title}"
-                                           class="inline-block align-baseline ml-1.5 px-1.5 py-0.5 rounded border border-slate-300 dark:border-slate-600 text-[10px] font-semibold text-slate-500 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-400 dark:hover:border-blue-400 transition whitespace-nowrap">PDF</a>
-                                    ` : ''}
                                 </h3>
 
                                 <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
@@ -378,6 +377,17 @@
         
                                 <p class="text-xs text-slate-500 italic">
                                     ${item.venue || ''}
+                                    
+                                    ${item.pdf ? `
+                                        <p class="text-xs">
+                                            <a href="${item.pdf}"
+                                               target="_blank"
+                                               rel="noopener noreferrer"
+                                               class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:underline transition-colors">
+                                                [PDF]
+                                            </a>
+                                        </p>
+                                    ` : ''}
                                 </p>
                             </article>
                         `).join('')}
