@@ -68,6 +68,7 @@ const publicationData = [
         link: "https://doi.org/10.20879/kjjcs.2025.69.4.002",
         tags: ["MS"],
         pdf: "assets/publications/09_MaEtAl2025.pdf",
+        code: "https://osf.io/6pxvh/",
         lan: "KOR",
         award: "Best Paper Award of the Year - 2025 KSJCS"
     },
@@ -140,6 +141,7 @@ const publicationData = [
         link: "https://doi.org/10.20879/kjjcs.2023.67.4.002",
         tags: ["VR", "BAYES"],
         pdf: "assets/publications/03_MaEtAl2023.pdf",
+        code: "https://osf.io/xp2qh/",
         lan: "KOR",
         award: null
     },
