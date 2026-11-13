@@ -47,7 +47,7 @@ const publicationData = [
         venue: "Journal of Public Relations, 29(4), 1-30.",
         link: "https://doi.org/10.15814/jpr.2025.29.4.1",
         tags: ["PCC"],
-        award: null
+        award: "Best Paper Award - 2026 KASPR"
     },
     {
         id: "009-pub",
