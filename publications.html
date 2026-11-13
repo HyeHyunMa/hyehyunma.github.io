@@ -213,6 +213,7 @@
         // Publication Data Logic
         let currentTag = 'All';
         let currentIndex = null;
+        let currentLanguage = null;
 
         const tagOrder = ['CI', 'ML', 'BAYES', 'MS', 'PCC', 'VR'];
         //const indexOrder = ['SSCI', 'KCI'];
@@ -239,34 +240,39 @@
                 return `<span class="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold border ${color}">${tag}</span>`;
             }).join('');
         }
-
+        
         function getFilteredData() {
             if (!Array.isArray(publicationData)) return [];
-
+        
             return publicationData.filter(item => {
                 const matchesTopic =
                     currentTag === 'All' ||
-                    (Array.isArray(item.tags) && item.tags.includes(currentTag));
-
+                    (Array.isArray(item.tags) &&
+                     item.tags.includes(currentTag));
+        
                 const matchesIndex =
                     currentIndex === null ||
                     item.index === currentIndex;
-
-                return matchesTopic && matchesIndex;
+        
+                const matchesLanguage =
+                    currentLanguage === null ||
+                    item.lan === currentLanguage;
+        
+                return matchesTopic && matchesIndex && matchesLanguage;
             });
         }
-
+        
         function renderTags() {
             const tagContainer = document.getElementById('tag-container');
             if (typeof publicationData === 'undefined') return;
-
-            const usedTags = new Set(
-                publicationData.flatMap(item => Array.isArray(item.tags) ? item.tags : [])
-            );
+        
             const topicTags = tagOrder;
-
+            const languageTags = ['ENG', 'KOR'];
+        
             const buttonMarkup = (label, active, kind) => `
-                <button type="button" data-filter="${label}" data-kind="${kind}"
+                <button type="button"
+                    data-filter="${label}"
+                    data-kind="${kind}"
                     class="filter-btn px-4 py-1.5 rounded-full text-xs font-extrabold transition border ${
                         active
                             ? 'bg-slate-900 dark:bg-blue-600 text-white border-slate-900 dark:border-blue-600'
@@ -275,9 +281,61 @@
                     ${label}
                 </button>
             `;
-
+        
             const divider = `
-                <span aria-hidden="true" class="w-px h-8 bg-slate-200 dark:bg-slate-700 mx-1 self-center"></span>
+                <span aria-hidden="true"
+                    class="w-px h-6 bg-slate-200 dark:bg-slate-700 mx-1 self-center">
+                </span>
+            `;
+        
+            tagContainer.innerHTML = `
+                ${buttonMarkup(
+                    'All',
+                    currentTag === 'All' && currentLanguage === null && currentIndex === null,
+                    'all'
+                )}
+        
+                ${divider}
+        
+                ${topicTags.map(tag =>
+                    buttonMarkup(tag, currentTag === tag, 'topic')
+                ).join('')}
+        
+                ${divider}
+        
+                ${languageTags.map(lang =>
+                    buttonMarkup(lang, currentLanguage === lang, 'language')
+                ).join('')}
+            `;
+        
+            tagContainer.querySelectorAll('.filter-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const value = button.dataset.filter;
+                    const kind = button.dataset.kind;
+        
+                    if (kind === 'all') {
+                        currentTag = 'All';
+                        currentIndex = null;
+                        currentLanguage = null;
+        
+                    } else if (kind === 'topic') {
+                        currentTag = currentTag === value ? 'All' : value;
+        
+                    } else if (kind === 'language') {
+                        currentLanguage =
+                            currentLanguage === value ? null : value;
+                    }
+        
+                    renderTags();
+                    renderPublications();
+                });
+            });
+        }
+   
+            const divider = `
+                <span aria-hidden="true"
+                    class="w-px h-4 bg-slate-200 dark:bg-slate-700 mx-1.5 self-center">
+                </span>
             `;
 
             tagContainer.innerHTML = `
