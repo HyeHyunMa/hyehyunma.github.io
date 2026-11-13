@@ -8,6 +8,7 @@ const publicationData = [
         link: "https://doi.org/10.15814/jpr.2026.30.3.89",
         tags: ["CI","ML","PCC"],
         pdf: "assets/publications/14_LeeEtAl2026.pdf",
+        lan: "KOR",
         award: null
      },
      {
@@ -19,6 +20,7 @@ const publicationData = [
         link: "https://doi.org/10.1080/03623319.2026.2721309",
         tags: ["PCC"],
         pdf: "assets/publications/13_PaekEtAl2026.pdf",
+        lan: "ENG",
         award: null
     },
     {
@@ -30,6 +32,7 @@ const publicationData = [
         link: "https://doi.org/10.1080/10410236.2025.2573778",
         tags: ["PCC"],
         pdf: "assets/publications/12_ChoiEtAl2025.pdf",
+        lan: "ENG",
         award: null
     },
     {
@@ -41,6 +44,7 @@ const publicationData = [
         link: "https://doi.org/10.1080/10447318.2025.2526590",
         tags: ["MS", "VR", "BAYES"],
         pdf: "assets/publications/11_Paek&Ma2025.pdf",
+        lan: "ENG",
         award: null
     },
     {
@@ -52,6 +56,7 @@ const publicationData = [
         link: "https://doi.org/10.15814/jpr.2025.29.4.1",
         tags: ["PCC"],
         pdf: "assets/publications/10_LeeEtAl2025.pdf",
+        lan: "KOR",
         award: "Best Paper Award - 2026 KASPR"
     },
     {
@@ -63,6 +68,7 @@ const publicationData = [
         link: "https://doi.org/10.20879/kjjcs.2025.69.4.002",
         tags: ["MS"],
         pdf: "assets/publications/09_MaEtAl2025.pdf",
+        lan: "KOR",
         award: "Best Paper Award of the Year - 2025 KSJCS"
     },
     {
@@ -74,6 +80,7 @@ const publicationData = [
         link: "https://doi.org/10.24172/hcr.2025.24.2.121",
         tags: ["PCC", "VR", "CI"],
         pdf: "assets/publications/08_MaEtAl2025.pdf",
+        lan: "KOR",
         award: "Best Paper Award - 2025 KHCA"
     },
     {
@@ -85,6 +92,7 @@ const publicationData = [
         link: "http://dx.doi.org/10.9728/dcs.2025.26.3.635",
         tags: ["PCC"],
         pdf: "assets/publications/07_HoveEtAl2025.pdf",
+        lan: "ENG",
         award: null
     },
     {
@@ -96,6 +104,7 @@ const publicationData = [
         link: "https://doi.org/10.21331/jprapr.2024.17.4.005",
         tags: [], 
         pdf: "assets/publications/06_JeonEtAl2024.pdf",
+        lan: "KOR",
         award: null
     },
     {
@@ -107,6 +116,7 @@ const publicationData = [
         link: "https://doi.org/10.20879/kjjcs.2024.68.5.006",
         tags: ["PCC"],
         pdf: "assets/publications/05_LeeEtAl2024.pdf",
+        lan: "KOR",
         award: null
     },
     {
@@ -118,6 +128,7 @@ const publicationData = [
         link: "https://doi.org/10.1016/j.pubrev.2023.102398",
         tags: ["PCC", "ML"],
         pdf: "assets/publications/04_OhEtAl2024.pdf",
+        lan: "ENG",
         award: "Top Paper Award - 2023 ICA"
     },
     {
@@ -129,6 +140,7 @@ const publicationData = [
         link: "https://doi.org/10.20879/kjjcs.2023.67.4.002",
         tags: ["VR", "BAYES"],
         pdf: "assets/publications/03_MaEtAl2023.pdf",
+        lan: "KOR",
         award: null
     },
     {
@@ -140,6 +152,7 @@ const publicationData = [
         link: "https://doi.org/10.14377/KJA.2022.11.30.7",
         tags: ["PCC", "BAYES", "CI", "ML"], 
         pdf: "assets/publications/02_Ma&Lee2022.pdf",
+        lan: "KOR",
         award: null
     },
     {
@@ -151,6 +164,7 @@ const publicationData = [
         link: "https://doi.org/10.36234/kace.2019.22.3.117",
         tags: [], 
         pdf: "assets/publications/01_Ma&Shim2019.pdf",
+        lan: "KOR",
         award: null
     }
 ];
