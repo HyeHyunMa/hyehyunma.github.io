@@ -331,39 +331,6 @@
                 });
             });
         }
-   
-            const divider = `
-                <span aria-hidden="true"
-                    class="w-px h-4 bg-slate-200 dark:bg-slate-700 mx-1.5 self-center">
-                </span>
-            `;
-
-            tagContainer.innerHTML = `
-                ${buttonMarkup('All', currentTag === 'All' && currentIndex === null, 'all')}
-                ${divider}
-                ${topicTags.map(tag => buttonMarkup(tag, currentTag === tag, 'topic')).join('')}
-                
-            `;
-
-            tagContainer.querySelectorAll('.filter-btn').forEach(button => {
-                button.addEventListener('click', () => {
-                    const value = button.dataset.filter;
-                    const kind = button.dataset.kind;
-
-                    if (kind === 'all') {
-                        currentTag = 'All';
-                        currentIndex = null;
-                    } else if (kind === 'topic') {
-                        currentTag = value;
-                    } else if (kind === 'index') {
-                        currentIndex = currentIndex === value ? null : value;
-                    }
-
-                    renderTags();
-                    renderPublications();
-                });
-            });
-        }
 
         function renderPublications() {
             const container = document.getElementById('publications-container');
@@ -435,18 +402,19 @@
         
                                 <p class="text-xs text-slate-500 italic">
                                     ${item.venue || ''}
-                                    
-                                    ${item.pdf ? `
-                                        <p class="text-xs">
-                                            <a href="${item.pdf}"
-                                               target="_blank"
-                                               rel="noopener noreferrer"
-                                               class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:underline transition-colors">
-                                                [PDF]
-                                            </a>
-                                        </p>
-                                    ` : ''}
                                 </p>
+                                
+                                ${item.pdf ? `
+                                    <p class="text-xs">
+                                        <a href="${item.pdf}"
+                                           target="_blank"
+                                           rel="noopener noreferrer"
+                                           class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 hover:underline transition-colors">
+                                            [PDF]
+                                        </a>
+                                    </p>
+                                ` : ''}
+
                             </article>
                         `).join('')}
                     </div>
